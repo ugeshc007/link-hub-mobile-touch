@@ -2,11 +2,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-50 to-purple-100 p-4">
+    <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-50 to-purple-100 py-16 px-4">
       <div className="w-full max-w-3xl text-center space-y-8">
         <div>
           <h1 className="text-5xl font-bold mb-4 text-purple-900">UWINN Mobil App</h1>
