@@ -99,7 +99,7 @@ const Index = () => {
             </CardFooter>
           </Card>
 
-          {/* iOS Card - Right side position */}
+          {/* iOS Card */}
           <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
             <CardHeader className="bg-gray-50 pb-4 border-b">
               <div className="w-12 h-12 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
