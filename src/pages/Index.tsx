@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Apple, Smartphone, Instagram, Facebook } from "lucide-react";
+import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Index = () => {
@@ -139,43 +140,91 @@ const Index = () => {
           </Card>
         </div>
         
+        {/* Our Digital Platforms Section */}
         <div className="mt-12 p-6 bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-purple-900">Experience UWINN on all devices</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-purple-900">Our Digital Platforms</h2>
           <p className="text-purple-700 mb-6">
-            Download our UWINN app today and enjoy a seamless mobile experience on your preferred platform.
+            We're committed to staying connected and accessible wherever you are. You can reach us and stay updated through the following platforms:
           </p>
           
-          <div className="flex flex-wrap justify-center gap-6 mb-6">
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="flex gap-2 border-purple-500 text-purple-700 hover:bg-purple-50"
-              onClick={() => window.open("https://www.instagram.com/uwinn.official", "_blank")}
-            >
-              <Instagram className="h-5 w-5" />
-              Instagram
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="flex gap-2 border-purple-500 text-purple-700 hover:bg-purple-50"
-              onClick={() => window.open("https://www.facebook.com/uwinn.updates", "_blank")}
-            >
-              <Facebook className="h-5 w-5" />
-              Facebook
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="flex gap-2 border-purple-500 text-purple-700 hover:bg-purple-50"
-              onClick={() => window.open("https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d", "_blank")}
-            >
-              <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
-                <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
-              </svg>
-              WhatsApp
-            </Button>
+          <div className="space-y-6">
+            {/* Instagram Platform */}
+            <div className="p-4 border border-purple-200 rounded-lg bg-purple-50 flex items-start">
+              <div className="bg-purple-100 p-3 rounded-full mr-4">
+                <Instagram className="h-6 w-6 text-purple-700" />
+              </div>
+              <div className="text-left">
+                <h3 className="text-lg font-medium text-purple-900 flex items-center">
+                  <span>🔹 Instagram</span>
+                </h3>
+                <p className="text-purple-700 mt-1">
+                  Follow us on Instagram for quick updates, behind-the-scenes glimpses, and engaging visual content that brings our brand to life.
+                </p>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="mt-3 border-purple-300 text-purple-700 hover:bg-purple-100"
+                  onClick={() => window.open("https://www.instagram.com/uwinn.official", "_blank")}
+                >
+                  <Instagram className="h-4 w-4 mr-2" />
+                  Follow Us
+                </Button>
+              </div>
+            </div>
+            
+            {/* Facebook Platform */}
+            <div className="p-4 border border-blue-200 rounded-lg bg-blue-50 flex items-start">
+              <div className="bg-blue-100 p-3 rounded-full mr-4">
+                <Facebook className="h-6 w-6 text-blue-600" />
+              </div>
+              <div className="text-left">
+                <h3 className="text-lg font-medium text-blue-900 flex items-center">
+                  <span>🔹 Facebook</span>
+                </h3>
+                <p className="text-blue-700 mt-1">
+                  Join our Facebook community to connect with our team, stay informed on announcements, promotions, and customer support.
+                </p>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="mt-3 border-blue-300 text-blue-700 hover:bg-blue-100"
+                  onClick={() => window.open("https://www.facebook.com/uwinn.updates", "_blank")}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  Join Us
+                </Button>
+              </div>
+            </div>
+            
+            {/* WhatsApp Platform */}
+            <div className="p-4 border border-green-200 rounded-lg bg-green-50 flex items-start">
+              <div className="bg-green-100 p-3 rounded-full mr-4">
+                <svg className="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                  <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
+                </svg>
+              </div>
+              <div className="text-left">
+                <h3 className="text-lg font-medium text-green-900 flex items-center">
+                  <span>🔹 WhatsApp</span>
+                </h3>
+                <p className="text-green-700 mt-1">
+                  Need direct assistance or want to place an order quickly? Reach us on WhatsApp for instant communication.
+                </p>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="mt-3 border-green-300 text-green-700 hover:bg-green-100"
+                  onClick={() => window.open("https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d", "_blank")}
+                >
+                  <svg className="h-4 w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                    <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
+                  </svg>
+                  Contact Us
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
