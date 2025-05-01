@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				uwinn: {
+					purple: '#91174D',    // Deep magenta/purple from the app
+					accent: '#FFB000',    // Gold/yellow accent color from the logo
+					light: '#D62B8C',     // Lighter purple/magenta for buttons
+					dark: '#6E0A49',      // Darker purple for backgrounds
+					background: '#91174D' // Main background color
 				}
 			},
 			borderRadius: {

@@ -5,11 +5,11 @@ import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-re
 
 const Index = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-50 to-purple-100 py-16 px-4">
+    <div className="flex flex-col items-center justify-center uwinn-gradient py-16 px-4">
       <div className="w-full max-w-3xl text-center space-y-8">
         <div>
-          <h1 className="text-5xl font-bold mb-4 text-purple-900">UWINN Mobil App</h1>
-          <p className="text-xl text-purple-700 mb-8">Download our app now for iOS, Android, and Huawei devices</p>
+          <h1 className="text-5xl font-bold mb-4 text-white">UWINN Mobile App</h1>
+          <p className="text-xl text-gray-200 mb-8">Download our app now for iOS, Android, and Huawei devices</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -96,7 +96,7 @@ const Index = () => {
             </CardFooter>
           </Card>
 
-          {/* iOS Card - Moved to the right */}
+          {/* iOS Card - Right side position */}
           <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
             <CardHeader className="bg-gray-50 pb-4 border-b">
               <div className="w-12 h-12 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
@@ -131,28 +131,28 @@ const Index = () => {
         
         {/* Our Digital Platforms Section */}
         <div className="mt-12 p-6 bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-purple-900">Our Digital Platforms</h2>
-          <p className="text-purple-700 mb-6">
+          <h2 className="text-2xl font-semibold mb-4 text-uwinn-purple">Our Digital Platforms</h2>
+          <p className="text-uwinn-purple mb-6">
             We're committed to staying connected and accessible wherever you are. You can reach us and stay updated through the following platforms:
           </p>
           
           <div className="space-y-6">
             {/* Instagram Platform */}
-            <div className="p-4 border border-purple-200 rounded-lg bg-purple-50 flex items-start">
-              <div className="bg-purple-100 p-3 rounded-full mr-4">
-                <Instagram className="h-6 w-6 text-purple-700" />
+            <div className="p-4 border border-uwinn-purple/20 rounded-lg bg-uwinn-purple/5 flex items-start">
+              <div className="bg-uwinn-purple/10 p-3 rounded-full mr-4">
+                <Instagram className="h-6 w-6 text-uwinn-purple" />
               </div>
               <div className="text-left">
-                <h3 className="text-lg font-medium text-purple-900 flex items-center">
+                <h3 className="text-lg font-medium text-uwinn-purple flex items-center">
                   <span>🔹 Instagram</span>
                 </h3>
-                <p className="text-purple-700 mt-1">
+                <p className="text-uwinn-purple/90 mt-1">
                   Follow us on Instagram for quick updates, behind-the-scenes glimpses, and engaging visual content that brings our brand to life.
                 </p>
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="mt-3 border-purple-300 text-purple-700 hover:bg-purple-100"
+                  className="mt-3 border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
                   onClick={() => window.open("https://www.instagram.com/uwinn.official", "_blank")}
                 >
                   <Instagram className="h-4 w-4 mr-2" />
@@ -162,21 +162,21 @@ const Index = () => {
             </div>
             
             {/* Facebook Platform */}
-            <div className="p-4 border border-blue-200 rounded-lg bg-blue-50 flex items-start">
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <Facebook className="h-6 w-6 text-blue-600" />
+            <div className="p-4 border border-uwinn-purple/20 rounded-lg bg-uwinn-purple/5 flex items-start">
+              <div className="bg-uwinn-purple/10 p-3 rounded-full mr-4">
+                <Facebook className="h-6 w-6 text-uwinn-purple" />
               </div>
               <div className="text-left">
-                <h3 className="text-lg font-medium text-blue-900 flex items-center">
+                <h3 className="text-lg font-medium text-uwinn-purple flex items-center">
                   <span>🔹 Facebook</span>
                 </h3>
-                <p className="text-blue-700 mt-1">
+                <p className="text-uwinn-purple/90 mt-1">
                   Join our Facebook community to connect with our team, stay informed on announcements, promotions, and customer support.
                 </p>
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="mt-3 border-blue-300 text-blue-700 hover:bg-blue-100"
+                  className="mt-3 border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
                   onClick={() => window.open("https://www.facebook.com/uwinn.updates", "_blank")}
                 >
                   <Facebook className="h-4 w-4 mr-2" />
@@ -186,24 +186,24 @@ const Index = () => {
             </div>
             
             {/* WhatsApp Platform */}
-            <div className="p-4 border border-green-200 rounded-lg bg-green-50 flex items-start">
-              <div className="bg-green-100 p-3 rounded-full mr-4">
-                <svg className="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="p-4 border border-uwinn-purple/20 rounded-lg bg-uwinn-purple/5 flex items-start">
+              <div className="bg-uwinn-purple/10 p-3 rounded-full mr-4">
+                <svg className="h-6 w-6 text-uwinn-purple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
                   <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
                 </svg>
               </div>
               <div className="text-left">
-                <h3 className="text-lg font-medium text-green-900 flex items-center">
+                <h3 className="text-lg font-medium text-uwinn-purple flex items-center">
                   <span>🔹 WhatsApp</span>
                 </h3>
-                <p className="text-green-700 mt-1">
+                <p className="text-uwinn-purple/90 mt-1">
                   Need direct assistance or want to place an order quickly? Reach us on WhatsApp for instant communication.
                 </p>
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="mt-3 border-green-300 text-green-700 hover:bg-green-100"
+                  className="mt-3 border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
                   onClick={() => window.open("https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d", "_blank")}
                 >
                   <svg className="h-4 w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
