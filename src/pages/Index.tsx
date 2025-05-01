@@ -58,7 +58,7 @@ const Index = () => {
             <CardHeader className="bg-red-50 pb-4 border-b">
               <div className="w-12 h-12 mx-auto bg-[#C41E3A] rounded-full flex items-center justify-center mb-2">
                 <img 
-                  src="/lovable-uploads/ea408620-bd2b-47c8-a875-169d2bdf2b35.png" 
+                  src="/lovable-uploads/79861206-cbda-4ce0-96fa-a8b3d2ad9548.png" 
                   alt="Huawei AppGallery" 
                   className="h-6 w-6 object-contain" 
                 />
@@ -69,7 +69,7 @@ const Index = () => {
             <CardContent className="p-4 flex-grow">
               <div className="flex flex-col items-center py-3 bg-red-50 rounded-lg border border-red-100 mb-3">
                 <img 
-                  src="/lovable-uploads/ea408620-bd2b-47c8-a875-169d2bdf2b35.png" 
+                  src="/lovable-uploads/79861206-cbda-4ce0-96fa-a8b3d2ad9548.png" 
                   alt="Huawei AppGallery" 
                   className="w-12 h-12 object-contain drop-shadow-md" 
                 />
@@ -90,7 +90,7 @@ const Index = () => {
                 onClick={() => window.open("https://appgallery.cloud.huawei.com/ag/n/app/C114029649?locale=en_US&source=appshare&subsource=C114029649", "_blank")}
               >
                 <img 
-                  src="/lovable-uploads/ea408620-bd2b-47c8-a875-169d2bdf2b35.png" 
+                  src="/lovable-uploads/79861206-cbda-4ce0-96fa-a8b3d2ad9548.png" 
                   alt="Huawei" 
                   className="h-4 w-4 mr-2" 
                 />
