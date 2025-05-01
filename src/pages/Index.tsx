@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Apple, Smartphone, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -199,6 +199,30 @@ const Index = () => {
               >
                 <Facebook className="h-4 w-4 mr-2" />
                 Join Us
+              </Button>
+            </div>
+          </div>
+
+          {/* YouTube Platform */}
+          <div className="p-4 border border-uwinn-purple/20 rounded-lg bg-red-50 flex items-start">
+            <div className="bg-uwinn-purple/10 p-3 rounded-full mr-4">
+              <Youtube className="h-6 w-6 text-uwinn-purple" />
+            </div>
+            <div className="text-left">
+              <h3 className="text-lg font-medium text-uwinn-purple flex items-center">
+                <span>🔹 YouTube</span>
+              </h3>
+              <p className="text-uwinn-purple/90 mt-1">
+                Subscribe to our YouTube channel for video tutorials, product demonstrations, and exclusive content about our services and offerings.
+              </p>
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="mt-3 border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
+                onClick={() => window.open("https://youtube.com/@uwinn-live?si=tNDbTwU-pQlEJnku", "_blank")}
+              >
+                <Youtube className="h-4 w-4 mr-2" />
+                Subscribe
               </Button>
             </div>
           </div>
