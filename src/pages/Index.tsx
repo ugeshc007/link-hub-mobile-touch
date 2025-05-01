@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Apple, Smartphone, Android } from "lucide-react";
+import { Apple, Smartphone, AndroidLogo } from "lucide-react";
 
 const Index = () => {
   return (
@@ -41,7 +41,7 @@ const Index = () => {
           <Card className="shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
               <CardTitle className="flex items-center justify-center gap-2">
-                <Android className="h-6 w-6" />
+                <AndroidLogo className="h-6 w-6" />
                 Android App
               </CardTitle>
               <CardDescription>Get it on Google Play</CardDescription>
@@ -57,7 +57,7 @@ const Index = () => {
             </CardContent>
             <CardFooter className="flex justify-center">
               <Button className="w-full" size="lg" variant="secondary">
-                <Android className="mr-2" />
+                <AndroidLogo className="mr-2" />
                 Download for Android
               </Button>
             </CardFooter>
