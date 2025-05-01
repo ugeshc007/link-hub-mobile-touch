@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -67,10 +66,11 @@ const Index = () => {
             </CardHeader>
             <CardContent className="p-4 flex-grow">
               <div className="flex flex-col items-center py-3 bg-red-50 rounded-lg border border-red-100 mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" className="drop-shadow-md">
-                  <circle cx="24" cy="24" r="20" fill="#C41E3A" />
-                  <path d="M24 8L18 22L12 36H36L30 22L24 8Z" fill="white" />
-                </svg>
+                <img 
+                  src="/lovable-uploads/ea408620-bd2b-47c8-a875-169d2bdf2b35.png" 
+                  alt="Huawei AppGallery" 
+                  className="w-12 h-12 object-contain drop-shadow-md" 
+                />
                 <div className="text-center mt-1 font-bold text-sm">AppGallery</div>
               </div>
               <div className="flex items-center gap-2">
@@ -87,10 +87,11 @@ const Index = () => {
                 style={{backgroundColor: "#C41E3A"}}
                 onClick={() => window.open("https://appgallery.cloud.huawei.com/ag/n/app/C114029649?locale=en_US&source=appshare&subsource=C114029649", "_blank")}
               >
-                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
-                  <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="#C41E3A"/>
-                </svg>
+                <img 
+                  src="/lovable-uploads/ea408620-bd2b-47c8-a875-169d2bdf2b35.png" 
+                  alt="Huawei" 
+                  className="h-4 w-4 mr-2" 
+                />
                 Download
               </Button>
             </CardFooter>
