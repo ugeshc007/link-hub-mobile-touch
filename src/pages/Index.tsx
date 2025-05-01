@@ -60,7 +60,7 @@ const Index = () => {
                 <div className="flex flex-col items-center">
                   <div className="bg-white p-2 rounded-lg">
                     <img 
-                      src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
+                      src="/lovable-uploads/d5f2d1a1-0acb-40af-b3b0-68978d87141c.png" 
                       alt="Google Play Store" 
                       className="w-24 h-24 object-contain" 
                     />
