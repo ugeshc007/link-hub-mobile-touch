@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
@@ -263,6 +262,18 @@ const Index = () => {
                     <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
                   </svg>
                   WhatsApp Channel
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
+                  onClick={() => window.open("https://whatsapp.com/channel/0029Vb5aczmEQIahTQ0nrW2B", "_blank")}
+                >
+                  <svg className="h-4 w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                    <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
+                  </svg>
+                  Alternative Channel
                 </Button>
               </div>
             </div>
