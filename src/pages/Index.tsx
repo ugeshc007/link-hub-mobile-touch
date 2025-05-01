@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -56,10 +57,11 @@ const Index = () => {
           <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
             <CardHeader className="bg-red-50 pb-4 border-b">
               <div className="w-12 h-12 mx-auto bg-[#C41E3A] rounded-full flex items-center justify-center mb-2">
-                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
-                  <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="#C41E3A"/>
-                </svg>
+                <img 
+                  src="/lovable-uploads/ea408620-bd2b-47c8-a875-169d2bdf2b35.png" 
+                  alt="Huawei AppGallery" 
+                  className="h-6 w-6 object-contain" 
+                />
               </div>
               <CardTitle className="text-lg">Huawei App</CardTitle>
               <CardDescription>Available on AppGallery</CardDescription>
