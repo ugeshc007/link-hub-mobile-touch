@@ -1,5 +1,5 @@
 
-import { MessageSquareQuestion } from "lucide-react";
+import { MessageSquareQuote } from "lucide-react";
 import {
   Collapsible,
   CollapsibleContent,
@@ -49,7 +49,7 @@ const FAQSection = () => {
     <div className="w-full bg-white py-16 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-10">
-          <MessageSquareQuestion className="text-uwinn-purple h-6 w-6" />
+          <MessageSquareQuote className="text-uwinn-purple h-6 w-6" />
           <h2 className="text-2xl font-semibold text-uwinn-purple">Frequently Asked Questions</h2>
         </div>
         
