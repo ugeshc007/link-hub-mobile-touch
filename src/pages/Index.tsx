@@ -56,13 +56,15 @@ const Index = () => {
             </CardHeader>
             <CardContent className="p-6">
               <div className="flex justify-center items-center py-10 bg-[#3DDC84]/10 rounded-lg mb-4">
-                {/* Google Play Store logo */}
+                {/* Google Play Store logo with white background */}
                 <div className="flex flex-col items-center">
-                  <img 
-                    src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
-                    alt="Google Play Store" 
-                    className="w-24 h-24 object-contain" 
-                  />
+                  <div className="bg-white p-2 rounded-lg">
+                    <img 
+                      src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
+                      alt="Google Play Store" 
+                      className="w-24 h-24 object-contain" 
+                    />
+                  </div>
                   <div className="text-center mt-2 font-bold text-lg">Play Store</div>
                 </div>
               </div>
