@@ -10,10 +10,10 @@ const Index = () => {
       <div className="w-full max-w-3xl text-center space-y-8">
         <div>
           <h1 className="text-5xl font-bold mb-4 text-purple-900">UWINN Mobil App</h1>
-          <p className="text-xl text-purple-700 mb-8">Download our app now for iOS and Android</p>
+          <p className="text-xl text-purple-700 mb-8">Download our app now for iOS, Android, and Huawei devices</p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {/* iOS Card */}
           <Card className="shadow-lg hover:shadow-xl transition-shadow border-t-4 border-t-[#000000] overflow-hidden">
             <CardHeader className="bg-gradient-to-r from-gray-100 to-gray-50">
@@ -86,6 +86,54 @@ const Index = () => {
               >
                 <Smartphone className="mr-2" />
                 Download for Android
+              </Button>
+            </CardFooter>
+          </Card>
+          
+          {/* Huawei AppGallery Card */}
+          <Card className="shadow-lg hover:shadow-xl transition-shadow border-t-4 border-t-[#C41E3A] overflow-hidden">
+            <CardHeader className="bg-gradient-to-r from-red-50 to-blue-50">
+              <CardTitle className="flex items-center justify-center gap-2">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#C41E3A"/>
+                  <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="white"/>
+                </svg>
+                <span>Huawei App</span>
+              </CardTitle>
+              <CardDescription>Available on AppGallery</CardDescription>
+            </CardHeader>
+            <CardContent className="p-6">
+              <div className="flex justify-center items-center py-10 bg-[#C41E3A]/10 rounded-lg mb-4">
+                {/* Huawei AppGallery logo */}
+                <div className="flex flex-col items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96" height="96">
+                    <circle cx="24" cy="24" r="20" fill="#C41E3A" />
+                    <path d="M24 8L18 22L12 36H36L30 22L24 8Z" fill="white" />
+                  </svg>
+                  <div className="text-center mt-2 font-bold text-lg">AppGallery</div>
+                </div>
+              </div>
+              <div className="space-y-2 text-left">
+                <div className="flex items-center gap-2">
+                  <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold">AVAILABLE</span>
+                  <span className="text-sm text-gray-500">Version 1.2.5</span>
+                </div>
+                <p className="text-sm text-gray-600">Get our app on Huawei devices through the AppGallery store.</p>
+              </div>
+            </CardContent>
+            <CardFooter className="flex justify-center bg-gradient-to-r from-red-50 to-blue-50">
+              <Button 
+                className="w-full" 
+                size="lg" 
+                variant="secondary" 
+                style={{backgroundColor: "#C41E3A", color: "#FFFFFF"}}
+                onClick={() => window.open("https://appgallery.cloud.huawei.com/ag/n/app/C114029649?locale=en_US&source=appshare&subsource=C114029649", "_blank")}
+              >
+                <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
+                  <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="#C41E3A"/>
+                </svg>
+                Download for Huawei
               </Button>
             </CardFooter>
           </Card>
