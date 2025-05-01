@@ -16,7 +16,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-purple-900">UWINN</span>
+              <img 
+                src="/lovable-uploads/f65f0e03-213e-462f-9e2e-3b4374087774.png" 
+                alt="UWINN Logo" 
+                className="h-10 w-auto" 
+              />
             </Link>
           </div>
 
