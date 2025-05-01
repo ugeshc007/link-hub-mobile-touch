@@ -42,7 +42,10 @@ const Index = () => {
               </div>
             </CardContent>
             <CardFooter className="relative z-10 bg-gradient-to-br from-gray-50 to-gray-100 pt-4">
-              <Button className="w-full bg-black hover:bg-gray-800 text-white" size="lg">
+              <Button 
+                className="w-full h-14 text-white font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                style={{backgroundColor: "#000000"}}
+              >
                 <Apple className="mr-2" />
                 Coming Soon
               </Button>
@@ -85,8 +88,7 @@ const Index = () => {
             </CardContent>
             <CardFooter className="relative z-10 bg-gradient-to-br from-green-50 to-blue-50 pt-4">
               <Button 
-                className="w-full text-black hover:bg-[#2cc372]" 
-                size="lg" 
+                className="w-full h-14 font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-black" 
                 style={{backgroundColor: "#3DDC84"}}
                 onClick={() => window.open("https://play.google.com/store/apps/details?id=com.uwinn.app&pcampaignid=web_share", "_blank")}
               >
@@ -132,9 +134,8 @@ const Index = () => {
             </CardContent>
             <CardFooter className="relative z-10 bg-gradient-to-br from-red-50 to-blue-50 pt-4">
               <Button 
-                className="w-full hover:bg-red-700" 
-                size="lg" 
-                style={{backgroundColor: "#C41E3A", color: "#FFFFFF"}}
+                className="w-full h-14 font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
+                style={{backgroundColor: "#C41E3A"}}
                 onClick={() => window.open("https://appgallery.cloud.huawei.com/ag/n/app/C114029649?locale=en_US&source=appshare&subsource=C114029649", "_blank")}
               >
                 <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
