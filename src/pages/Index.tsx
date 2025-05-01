@@ -24,13 +24,9 @@ const Index = () => {
               <CardDescription>Get it on the App Store</CardDescription>
             </CardHeader>
             <CardContent className="p-6">
-              <AspectRatio ratio={9/16} className="bg-black rounded-lg overflow-hidden mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&h=1200" 
-                  alt="iOS App Screenshot" 
-                  className="h-full w-full object-cover"
-                />
-              </AspectRatio>
+              <div className="flex justify-center items-center py-10 bg-gray-50 rounded-lg mb-4">
+                <Apple className="h-32 w-32 text-black" />
+              </div>
               <div className="space-y-2 text-left">
                 <div className="flex items-center gap-2">
                   <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-semibold">NEW</span>
@@ -57,13 +53,17 @@ const Index = () => {
               <CardDescription>Get it on Google Play</CardDescription>
             </CardHeader>
             <CardContent className="p-6">
-              <AspectRatio ratio={9/16} className="bg-black rounded-lg overflow-hidden mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&h=1200" 
-                  alt="Android App Screenshot" 
-                  className="h-full w-full object-cover"
-                />
-              </AspectRatio>
+              <div className="flex justify-center items-center py-10 bg-[#3DDC84]/10 rounded-lg mb-4">
+                <div className="relative w-32 h-32 flex items-center justify-center">
+                  <div className="absolute bg-[#3DDC84] w-24 h-24 rounded-lg transform rotate-45"></div>
+                  <div className="absolute bg-white w-20 h-20 rounded-lg transform rotate-45"></div>
+                  <div className="absolute z-10">
+                    <div className="bg-[#3DDC84] w-4 h-12 rounded-full transform -translate-x-6"></div>
+                    <div className="bg-[#3DDC84] w-4 h-8 rounded-full transform translate-x-6 -translate-y-8"></div>
+                    <div className="bg-[#3DDC84] w-4 h-8 rounded-full transform translate-y-4"></div>
+                  </div>
+                </div>
+              </div>
               <div className="space-y-2 text-left">
                 <div className="flex items-center gap-2">
                   <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold">POPULAR</span>
