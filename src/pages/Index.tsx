@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -12,133 +13,127 @@ const Index = () => {
           <p className="text-xl text-purple-700 mb-8">Download our app now for iOS, Android, and Huawei devices</p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* iOS Card */}
-          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden rounded-lg">
-            <CardHeader className="bg-gray-50 pb-2 border-b">
-              <div className="w-16 h-16 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
-                <Apple className="h-10 w-10 text-white" />
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+            <CardHeader className="bg-gray-50 pb-4 border-b">
+              <div className="w-12 h-12 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
+                <Apple className="h-6 w-6 text-white" />
               </div>
-              <CardTitle className="text-xl">iOS App</CardTitle>
+              <CardTitle className="text-lg">iOS App</CardTitle>
               <CardDescription>Coming Soon to App Store</CardDescription>
             </CardHeader>
-            <CardContent className="p-6">
-              <div className="bg-gray-50 rounded-lg p-4 mb-4 border border-gray-100">
-                <div className="flex flex-col items-center py-6">
-                  <Apple className="h-20 w-20 text-black" />
-                  <div className="text-center mt-3 font-bold text-lg">App Store</div>
-                </div>
+            <CardContent className="p-4 flex-grow">
+              <div className="flex flex-col items-center py-3 bg-gray-50 rounded-lg border border-gray-100 mb-3">
+                <Apple className="h-12 w-12 text-black" />
+                <div className="text-center mt-1 font-bold text-sm">App Store</div>
               </div>
-              <div className="space-y-3 text-left">
+              <div className="space-y-2 text-left">
                 <div className="flex items-center gap-2">
-                  <span className="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full font-semibold inline-flex items-center">
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-1"></span>
+                  <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
+                    <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-1"></span>
                     COMING SOON
                   </span>
                 </div>
-                <p className="text-sm text-gray-600">Our iOS app is currently under development. Stay tuned for updates!</p>
+                <p className="text-xs text-gray-600">Our iOS app is currently under development.</p>
               </div>
             </CardContent>
-            <CardFooter className="bg-gray-50 border-t pt-4">
+            <CardFooter className="bg-gray-50 border-t p-3">
               <Button 
-                className="w-full h-14 text-white font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                className="w-full text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                 style={{backgroundColor: "#000000"}}
               >
-                <Apple className="mr-2" />
+                <Apple className="mr-2 h-4 w-4" />
                 Coming Soon
               </Button>
             </CardFooter>
           </Card>
 
           {/* Android Card */}
-          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden rounded-lg">
-            <CardHeader className="bg-green-50 pb-2 border-b">
-              <div className="w-16 h-16 mx-auto bg-[#3DDC84] rounded-full flex items-center justify-center mb-2">
-                <Smartphone className="h-10 w-10 text-white" />
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+            <CardHeader className="bg-green-50 pb-4 border-b">
+              <div className="w-12 h-12 mx-auto bg-[#3DDC84] rounded-full flex items-center justify-center mb-2">
+                <Smartphone className="h-6 w-6 text-white" />
               </div>
-              <CardTitle className="text-xl">Android App</CardTitle>
+              <CardTitle className="text-lg">Android App</CardTitle>
               <CardDescription>Get it on Google Play</CardDescription>
             </CardHeader>
-            <CardContent className="p-6">
-              <div className="bg-green-50 rounded-lg p-4 mb-4 border border-green-100">
-                <div className="flex flex-col items-center py-6">
-                  <div className="bg-white p-2 rounded-lg shadow-md">
-                    <img 
-                      src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
-                      alt="Google Play Store" 
-                      className="w-20 h-20 object-contain" 
-                    />
-                  </div>
-                  <div className="text-center mt-3 font-bold text-lg">Play Store</div>
+            <CardContent className="p-4 flex-grow">
+              <div className="flex flex-col items-center py-3 bg-green-50 rounded-lg border border-green-100 mb-3">
+                <div className="bg-white p-1 rounded-lg shadow-md">
+                  <img 
+                    src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
+                    alt="Google Play Store" 
+                    className="w-12 h-12 object-contain" 
+                  />
                 </div>
+                <div className="text-center mt-1 font-bold text-sm">Play Store</div>
               </div>
-              <div className="space-y-3 text-left">
+              <div className="space-y-2 text-left">
                 <div className="flex items-center gap-2">
-                  <span className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-semibold inline-flex items-center">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-1"></span>
+                  <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
+                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-1"></span>
                     AVAILABLE
                   </span>
-                  <span className="text-sm text-gray-500">Version 1.2.5</span>
+                  <span className="text-xs text-gray-500">v1.2.5</span>
                 </div>
-                <p className="text-sm text-gray-600">Download our feature-rich UWINN Android app with customization options.</p>
+                <p className="text-xs text-gray-600">Feature-rich Android app with customization options.</p>
               </div>
             </CardContent>
-            <CardFooter className="bg-green-50 border-t pt-4">
+            <CardFooter className="bg-green-50 border-t p-3">
               <Button 
-                className="w-full h-14 font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-black" 
+                className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-black" 
                 style={{backgroundColor: "#3DDC84"}}
                 onClick={() => window.open("https://play.google.com/store/apps/details?id=com.uwinn.app&pcampaignid=web_share", "_blank")}
               >
-                <Smartphone className="mr-2" />
-                Download for Android
+                <Smartphone className="mr-2 h-4 w-4" />
+                Download
               </Button>
             </CardFooter>
           </Card>
           
           {/* Huawei AppGallery Card */}
-          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden rounded-lg">
-            <CardHeader className="bg-red-50 pb-2 border-b">
-              <div className="w-16 h-16 mx-auto bg-[#C41E3A] rounded-full flex items-center justify-center mb-2">
-                <svg className="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+            <CardHeader className="bg-red-50 pb-4 border-b">
+              <div className="w-12 h-12 mx-auto bg-[#C41E3A] rounded-full flex items-center justify-center mb-2">
+                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
                   <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="#C41E3A"/>
                 </svg>
               </div>
-              <CardTitle className="text-xl">Huawei App</CardTitle>
+              <CardTitle className="text-lg">Huawei App</CardTitle>
               <CardDescription>Available on AppGallery</CardDescription>
             </CardHeader>
-            <CardContent className="p-6">
-              <div className="bg-red-50 rounded-lg p-4 mb-4 border border-red-100">
-                <div className="flex flex-col items-center py-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="80" height="80" className="drop-shadow-md">
-                    <circle cx="24" cy="24" r="20" fill="#C41E3A" />
-                    <path d="M24 8L18 22L12 36H36L30 22L24 8Z" fill="white" />
-                  </svg>
-                  <div className="text-center mt-3 font-bold text-lg">AppGallery</div>
-                </div>
+            <CardContent className="p-4 flex-grow">
+              <div className="flex flex-col items-center py-3 bg-red-50 rounded-lg border border-red-100 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" className="drop-shadow-md">
+                  <circle cx="24" cy="24" r="20" fill="#C41E3A" />
+                  <path d="M24 8L18 22L12 36H36L30 22L24 8Z" fill="white" />
+                </svg>
+                <div className="text-center mt-1 font-bold text-sm">AppGallery</div>
               </div>
-              <div className="space-y-3 text-left">
+              <div className="space-y-2 text-left">
                 <div className="flex items-center gap-2">
-                  <span className="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full font-semibold inline-flex items-center">
-                    <span className="w-2 h-2 bg-red-400 rounded-full mr-1"></span>
+                  <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
+                    <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-1"></span>
                     AVAILABLE
                   </span>
-                  <span className="text-sm text-gray-500">Version 1.2.5</span>
+                  <span className="text-xs text-gray-500">v1.2.5</span>
                 </div>
-                <p className="text-sm text-gray-600">Get our app on Huawei devices through the AppGallery store.</p>
+                <p className="text-xs text-gray-600">Get our app on Huawei through AppGallery.</p>
               </div>
             </CardContent>
-            <CardFooter className="bg-red-50 border-t pt-4">
+            <CardFooter className="bg-red-50 border-t p-3">
               <Button 
-                className="w-full h-14 font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
+                className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
                 style={{backgroundColor: "#C41E3A"}}
                 onClick={() => window.open("https://appgallery.cloud.huawei.com/ag/n/app/C114029649?locale=en_US&source=appshare&subsource=C114029649", "_blank")}
               >
-                <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
                   <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="#C41E3A"/>
                 </svg>
-                Download for Huawei
+                Download
               </Button>
             </CardFooter>
           </Card>
