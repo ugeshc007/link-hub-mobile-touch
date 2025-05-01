@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -168,7 +169,7 @@ const Index = () => {
             </div>
             
             {/* Facebook Platform */}
-            <div className="p-4 border border-uwinn-purple/20 rounded-lg bg-uwinn-purple/5 flex items-start">
+            <div className="p-4 border border-uwinn-purple/20 rounded-lg bg-blue-50 flex items-start">
               <div className="bg-uwinn-purple/10 p-3 rounded-full mr-4">
                 <Facebook className="h-6 w-6 text-uwinn-purple" />
               </div>
