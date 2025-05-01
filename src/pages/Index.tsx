@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -15,17 +14,16 @@ const Index = () => {
         
         <div className="grid md:grid-cols-3 gap-6">
           {/* iOS Card */}
-          <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 border-0 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-50 rounded-xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#000000]/5 to-[#000000]/10 z-0"></div>
-            <CardHeader className="relative z-10 pb-2">
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden rounded-lg">
+            <CardHeader className="bg-gray-50 pb-2 border-b">
               <div className="w-16 h-16 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
                 <Apple className="h-10 w-10 text-white" />
               </div>
               <CardTitle className="text-xl">iOS App</CardTitle>
               <CardDescription>Coming Soon to App Store</CardDescription>
             </CardHeader>
-            <CardContent className="p-6 relative z-10">
-              <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg p-4 mb-4 shadow-inner">
+            <CardContent className="p-6">
+              <div className="bg-gray-50 rounded-lg p-4 mb-4 border border-gray-100">
                 <div className="flex flex-col items-center py-6">
                   <Apple className="h-20 w-20 text-black" />
                   <div className="text-center mt-3 font-bold text-lg">App Store</div>
@@ -41,7 +39,7 @@ const Index = () => {
                 <p className="text-sm text-gray-600">Our iOS app is currently under development. Stay tuned for updates!</p>
               </div>
             </CardContent>
-            <CardFooter className="relative z-10 bg-gradient-to-br from-gray-50 to-gray-100 pt-4">
+            <CardFooter className="bg-gray-50 border-t pt-4">
               <Button 
                 className="w-full h-14 text-white font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                 style={{backgroundColor: "#000000"}}
@@ -53,17 +51,16 @@ const Index = () => {
           </Card>
 
           {/* Android Card */}
-          <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 border-0 overflow-hidden bg-gradient-to-br from-green-50 to-blue-50 rounded-xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#3DDC84]/5 to-[#3DDC84]/10 z-0"></div>
-            <CardHeader className="relative z-10 pb-2">
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden rounded-lg">
+            <CardHeader className="bg-green-50 pb-2 border-b">
               <div className="w-16 h-16 mx-auto bg-[#3DDC84] rounded-full flex items-center justify-center mb-2">
                 <Smartphone className="h-10 w-10 text-white" />
               </div>
               <CardTitle className="text-xl">Android App</CardTitle>
               <CardDescription>Get it on Google Play</CardDescription>
             </CardHeader>
-            <CardContent className="p-6 relative z-10">
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 mb-4 shadow-inner">
+            <CardContent className="p-6">
+              <div className="bg-green-50 rounded-lg p-4 mb-4 border border-green-100">
                 <div className="flex flex-col items-center py-6">
                   <div className="bg-white p-2 rounded-lg shadow-md">
                     <img 
@@ -86,7 +83,7 @@ const Index = () => {
                 <p className="text-sm text-gray-600">Download our feature-rich UWINN Android app with customization options.</p>
               </div>
             </CardContent>
-            <CardFooter className="relative z-10 bg-gradient-to-br from-green-50 to-blue-50 pt-4">
+            <CardFooter className="bg-green-50 border-t pt-4">
               <Button 
                 className="w-full h-14 font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-black" 
                 style={{backgroundColor: "#3DDC84"}}
@@ -99,9 +96,8 @@ const Index = () => {
           </Card>
           
           {/* Huawei AppGallery Card */}
-          <Card className="shadow-xl hover:shadow-2xl transition-all duration-300 border-0 overflow-hidden bg-gradient-to-br from-red-50 to-blue-50 rounded-xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#C41E3A]/5 to-[#C41E3A]/10 z-0"></div>
-            <CardHeader className="relative z-10 pb-2">
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden rounded-lg">
+            <CardHeader className="bg-red-50 pb-2 border-b">
               <div className="w-16 h-16 mx-auto bg-[#C41E3A] rounded-full flex items-center justify-center mb-2">
                 <svg className="h-10 w-10 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
@@ -111,8 +107,8 @@ const Index = () => {
               <CardTitle className="text-xl">Huawei App</CardTitle>
               <CardDescription>Available on AppGallery</CardDescription>
             </CardHeader>
-            <CardContent className="p-6 relative z-10">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-4 mb-4 shadow-inner">
+            <CardContent className="p-6">
+              <div className="bg-red-50 rounded-lg p-4 mb-4 border border-red-100">
                 <div className="flex flex-col items-center py-6">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="80" height="80" className="drop-shadow-md">
                     <circle cx="24" cy="24" r="20" fill="#C41E3A" />
@@ -132,7 +128,7 @@ const Index = () => {
                 <p className="text-sm text-gray-600">Get our app on Huawei devices through the AppGallery store.</p>
               </div>
             </CardContent>
-            <CardFooter className="relative z-10 bg-gradient-to-br from-red-50 to-blue-50 pt-4">
+            <CardFooter className="bg-red-50 border-t pt-4">
               <Button 
                 className="w-full h-14 font-semibold text-base rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
                 style={{backgroundColor: "#C41E3A"}}
