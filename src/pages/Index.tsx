@@ -13,38 +13,6 @@ const Index = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* iOS Card */}
-          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-            <CardHeader className="bg-gray-50 pb-4 border-b">
-              <div className="w-12 h-12 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
-                <Apple className="h-6 w-6 text-white" />
-              </div>
-              <CardTitle className="text-lg">iOS App</CardTitle>
-              <CardDescription>Coming Soon to App Store</CardDescription>
-            </CardHeader>
-            <CardContent className="p-4 flex-grow">
-              <div className="flex flex-col items-center py-3 bg-gray-50 rounded-lg border border-gray-100 mb-3">
-                <Apple className="h-12 w-12 text-black" />
-                <div className="text-center mt-1 font-bold text-sm">App Store</div>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
-                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-1"></span>
-                  COMING SOON
-                </span>
-              </div>
-            </CardContent>
-            <CardFooter className="bg-gray-50 border-t p-3">
-              <Button 
-                className="w-full text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
-                style={{backgroundColor: "#000000"}}
-              >
-                <Apple className="mr-2 h-4 w-4" />
-                Coming Soon
-              </Button>
-            </CardFooter>
-          </Card>
-
           {/* Android Card */}
           <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
             <CardHeader className="bg-green-50 pb-4 border-b">
@@ -124,6 +92,38 @@ const Index = () => {
                   <path d="M11.99 6L8.97 11.79L6 17.59H17.98L15.01 11.79L11.99 6Z" fill="#C41E3A"/>
                 </svg>
                 Download
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* iOS Card - Moved to the right */}
+          <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+            <CardHeader className="bg-gray-50 pb-4 border-b">
+              <div className="w-12 h-12 mx-auto bg-black rounded-full flex items-center justify-center mb-2">
+                <Apple className="h-6 w-6 text-white" />
+              </div>
+              <CardTitle className="text-lg">iOS App</CardTitle>
+              <CardDescription>Coming Soon to App Store</CardDescription>
+            </CardHeader>
+            <CardContent className="p-4 flex-grow">
+              <div className="flex flex-col items-center py-3 bg-gray-50 rounded-lg border border-gray-100 mb-3">
+                <Apple className="h-12 w-12 text-black" />
+                <div className="text-center mt-1 font-bold text-sm">App Store</div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
+                  <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-1"></span>
+                  COMING SOON
+                </span>
+              </div>
+            </CardContent>
+            <CardFooter className="bg-gray-50 border-t p-3">
+              <Button 
+                className="w-full text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                style={{backgroundColor: "#000000"}}
+              >
+                <Apple className="mr-2 h-4 w-4" />
+                Coming Soon
               </Button>
             </CardFooter>
           </Card>
