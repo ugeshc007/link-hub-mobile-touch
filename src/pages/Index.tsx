@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -26,7 +25,7 @@ const Index = () => {
               <div className="flex flex-col items-center py-3 bg-green-50 rounded-lg border border-green-100 mb-3">
                 <div className="bg-white p-1 rounded-lg shadow-md">
                   <img 
-                    src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
+                    src="/lovable-uploads/9e35edaa-5ef7-4ffb-9e3c-acafed4674dc.png" 
                     alt="Google Play Store" 
                     className="w-12 h-12 object-contain" 
                   />
@@ -47,7 +46,11 @@ const Index = () => {
                 style={{backgroundColor: "#3DDC84"}}
                 onClick={() => window.open("https://play.google.com/store/apps/details?id=com.uwinn.app&pcampaignid=web_share", "_blank")}
               >
-                <Smartphone className="mr-2 h-4 w-4" />
+                <img 
+                  src="/lovable-uploads/9e35edaa-5ef7-4ffb-9e3c-acafed4674dc.png" 
+                  alt="Google Play" 
+                  className="h-4 w-4 mr-2" 
+                />
                 Download
               </Button>
             </CardFooter>
