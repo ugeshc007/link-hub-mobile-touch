@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter, HelpCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,6 +41,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="#" className="text-gray-300 hover:text-uwinn-accent transition-colors">Features</Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-gray-300 hover:text-uwinn-accent transition-colors flex items-center gap-2">
+                  <HelpCircle size={16} />
+                  FAQs
+                </Link>
               </li>
               <li>
                 <Link to="#" className="text-gray-300 hover:text-uwinn-accent transition-colors">Contact</Link>

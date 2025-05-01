@@ -1,10 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
 import AppScreenshots from "@/components/AppScreenshots";
 import Testimonials from "@/components/Testimonials";
 import FeaturesSection from "@/components/FeaturesSection";
-import FAQSection from "@/components/FAQSection";
 import StatsSection from "@/components/StatsSection";
 import ThemeToggle from "@/components/ThemeToggle";
 

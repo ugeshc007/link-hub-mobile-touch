@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import FAQ from "./pages/FAQ";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ThemeToggle from "./components/ThemeToggle";
@@ -23,6 +24,7 @@ const App = () => (
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/faq" element={<FAQ />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
