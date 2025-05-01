@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
 import ThemeToggle from "./components/ThemeToggle";
 
 const queryClient = new QueryClient();
@@ -29,7 +28,6 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
-          <Footer />
           <ThemeToggle />
         </div>
       </BrowserRouter>
