@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook } from "lucide-react";
@@ -59,12 +58,11 @@ const Index = () => {
               <div className="flex justify-center items-center py-10 bg-[#3DDC84]/10 rounded-lg mb-4">
                 {/* Google Play Store logo */}
                 <div className="flex flex-col items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96" height="96">
-                    <path fill="#4db6ac" d="M7.705,4.043C7.292,4.15,7,4.507,7,5.121v37.758c0,0.614,0.292,0.971,0.705,1.078l22.607-19.957 L7.705,4.043z"/>
-                    <path fill="#dce775" d="M33.237,18.36l-2.925-1.6l-22.607,20l22.607,20l2.925-1.6l6.594-5.806L41,43.922V4.078 l-1.169-0.68L33.237,18.36z"/>
-                    <path fill="#d32f2f" d="M8.417,43.802L30.97,24L8.417,4.198C8.137,4.337,7.975,4.687,7.975,5.121v37.758 C7.975,43.313,8.137,43.663,8.417,43.802z"/>
-                    <path fill="#fbc02d" d="M41.142,24l-7.905-7.905l-2.242,1.381l6.283,6.524l-6.283,6.524l2.242,1.381L41.142,24z"/>
-                  </svg>
+                  <img 
+                    src="/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png" 
+                    alt="Google Play Store" 
+                    className="w-24 h-24 object-contain" 
+                  />
                   <div className="text-center mt-2 font-bold text-lg">Play Store</div>
                 </div>
               </div>
