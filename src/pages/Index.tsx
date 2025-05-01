@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -143,16 +144,7 @@ const Index = () => {
         </div>
       </div>
       
-      {/* Features Section */}
-      <FeaturesSection />
-      
-      {/* Stats Section */}
-      <StatsSection />
-      
-      {/* Testimonials */}
-      <Testimonials />
-      
-      {/* Our Digital Platforms Section - Keep this section from original */}
+      {/* Our Digital Platforms Section - Moved above Features section */}
       <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-uwinn-purple">Our Digital Platforms</h2>
         <p className="text-uwinn-purple mb-6">
@@ -239,6 +231,15 @@ const Index = () => {
           </div>
         </div>
       </div>
+      
+      {/* Features Section */}
+      <FeaturesSection />
+      
+      {/* Stats Section */}
+      <StatsSection />
+      
+      {/* Testimonials */}
+      <Testimonials />
       
       {/* Theme Toggle */}
       <ThemeToggle />
