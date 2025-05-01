@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
@@ -156,9 +155,6 @@ const Index = () => {
       
       {/* Testimonials */}
       <Testimonials />
-      
-      {/* FAQ Section */}
-      <FAQSection />
       
       {/* Our Digital Platforms Section - Keep this section from original */}
       <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-6 bg-white rounded-lg shadow-md">
