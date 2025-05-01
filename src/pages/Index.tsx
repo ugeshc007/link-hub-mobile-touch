@@ -1,11 +1,16 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Apple, Smartphone, Instagram, Facebook, MessageSquare } from "lucide-react";
+import { Apple, Smartphone, Instagram, Facebook, MessageCircle } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
+  const openWhatsAppChat = (phoneNumber) => {
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="flex flex-col items-center justify-center">
       {/* Hero Section with Downloads - Original section */}
@@ -213,18 +218,29 @@ const Index = () => {
               <p className="text-uwinn-purple/90 mt-1">
                 Need direct assistance or want to place an order quickly? Reach us on WhatsApp for instant communication.
               </p>
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="mt-3 border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
-                onClick={() => window.open("https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d", "_blank")}
-              >
-                <svg className="h-4 w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
-                  <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
-                </svg>
-                Contact Us
-              </Button>
+              <div className="flex flex-col space-y-3 mt-3">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
+                  onClick={() => openWhatsAppChat("97156437791")}
+                >
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Customer Care: +971 56437791
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-uwinn-purple/30 text-uwinn-purple hover:bg-uwinn-purple/10"
+                  onClick={() => window.open("https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d", "_blank")}
+                >
+                  <svg className="h-4 w-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
+                    <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
+                  </svg>
+                  WhatsApp Channel
+                </Button>
+              </div>
             </div>
           </div>
         </div>
