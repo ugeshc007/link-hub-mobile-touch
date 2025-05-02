@@ -215,7 +215,7 @@ const Index = () => {
                   variant="outline" 
                   size="sm" 
                   className="border-[#FF0000]/30 text-[#FF0000] hover:bg-[#FF0000]/10"
-                  onClick={() => window.open("https://youtube.com/@uwinn-tutorials", "_blank")}
+                  onClick={() => window.open("https://www.youtube.com/@uwinn-live", "_blank")}
                 >
                   <Youtube className="h-4 w-4 mr-2" />
                   UWINN Tutorials
