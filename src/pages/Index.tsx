@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, CheckCircle } from "lucide-react";
@@ -193,7 +194,7 @@ const Index = () => {
                   onClick={() => window.open("https://www.youtube.com/@uwinn-live", "_blank")}
                 >
                   <Youtube className="h-4 w-4 mr-2" />
-                  UWINN Tutorials
+                  UWINN Updates
                 </Button>
               </div>
             </div>
