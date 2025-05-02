@@ -86,8 +86,11 @@ const Footer = () => {
               <MessageCircle size={16} />
               Customer Care: +971 564367791
             </a>
-            <a href="https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors">
-              WhatsApp Channel
+            <a href="https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors block mb-2">
+              Main Channel
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb5aczmEQIahTQ0nrW2B" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors">
+              Additional Channel
             </a>
           </div>
         </div>

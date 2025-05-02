@@ -83,6 +83,12 @@ const Footer = () => {
             <a href="https://api.whatsapp.com/send/?phone=971564367791&text=Hello%20there!&type=phone_number&app_absent=0" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors">
               WhatsApp Channel
             </a>
+            <a href="https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors block mt-2">
+              Main Channel
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb5aczmEQIahTQ0nrW2B" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors block mt-2">
+              Additional Channel
+            </a>
           </div>
         </div>
 
