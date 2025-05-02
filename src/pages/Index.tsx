@@ -171,6 +171,43 @@ const Index = () => {
             </div>
           </div>
           
+          {/* Facebook Platform - NEW */}
+          <div className="p-3 md:p-4 border border-[#1877F2]/20 rounded-lg bg-[#1877F2]/5 flex flex-col md:flex-row items-start">
+            <div className="bg-[#1877F2] p-3 rounded-full mb-3 md:mb-0 md:mr-4 shadow-md flex-shrink-0 self-center md:self-start">
+              <Facebook className="h-6 w-6 text-white" />
+            </div>
+            <div className="text-left w-full">
+              <h3 className="text-lg font-medium text-[#1877F2] flex items-center">
+                <span>Facebook</span>
+              </h3>
+              <p className="text-uwinn-purple/90 mt-1">
+                Connect with us on Facebook for community updates, announcements, and the latest news about UWINN.
+              </p>
+              
+              <div className="grid grid-cols-1 gap-3 mt-3">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
+                  onClick={() => window.open("https://facebook.com/uwinn.updates", "_blank")}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  UWINN Updates
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
+                  onClick={() => window.open("https://facebook.com/uwinn.live", "_blank")}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  UWINN Live
+                </Button>
+              </div>
+            </div>
+          </div>
+          
           {/* YouTube Platform - Better spacing for mobile */}
           <div className="p-3 md:p-4 border border-[#FF0000]/20 rounded-lg bg-[#FF0000]/5 flex flex-col md:flex-row items-start">
             <div className="bg-[#FF0000] p-3 rounded-full mb-3 md:mb-0 md:mr-4 shadow-md flex-shrink-0 self-center md:self-start">
