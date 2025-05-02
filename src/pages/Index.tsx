@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
-import AppScreenshots from "@/components/AppScreenshots";
 import FeaturesSection from "@/components/FeaturesSection";
 import Testimonials from "@/components/Testimonials";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -152,9 +151,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-      
-      {/* App Screenshots */}
-      <AppScreenshots />
       
       {/* Features Section */}
       <FeaturesSection />
