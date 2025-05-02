@@ -47,7 +47,7 @@ const Index = () => {
                   </div>
                   <div className="text-center mt-1 font-bold text-sm">Play Store</div>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex justify-center items-center gap-2">
                   <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-1"></span>
                     AVAILABLE
@@ -57,8 +57,8 @@ const Index = () => {
               </CardContent>
               <CardFooter className="bg-green-50 border-t p-3">
                 <Button 
-                  className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-black" 
-                  style={{backgroundColor: "#3DDC84"}}
+                  className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
+                  style={{backgroundColor: "#000000"}}
                   onClick={() => window.open("https://play.google.com/store/apps/details?id=com.uwinn.app&pcampaignid=web_share", "_blank")}
                 >
                   <img 
@@ -93,7 +93,7 @@ const Index = () => {
                   />
                   <div className="text-center mt-1 font-bold text-sm">AppGallery</div>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex justify-center items-center gap-2">
                   <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
                     <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-1"></span>
                     AVAILABLE
@@ -104,7 +104,7 @@ const Index = () => {
               <CardFooter className="bg-red-50 border-t p-3">
                 <Button 
                   className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
-                  style={{backgroundColor: "#C41E3A"}}
+                  style={{backgroundColor: "#000000"}}
                   onClick={() => window.open("https://appgallery.cloud.huawei.com/ag/n/app/C114029649?locale=en_US&source=appshare&subsource=C114029649", "_blank")}
                 >
                   <img 
@@ -131,7 +131,7 @@ const Index = () => {
                   <Apple className="h-12 w-12 text-black" />
                   <div className="text-center mt-1 font-bold text-sm">App Store</div>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex justify-center items-center gap-2">
                   <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
                     <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-1"></span>
                     COMING SOON
