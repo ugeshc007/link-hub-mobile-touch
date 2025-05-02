@@ -118,68 +118,6 @@ const Index = () => {
         </div>
       </div>
       
-      {/* Facebook Pages Section */}
-      <div className="w-full max-w-3xl mx-auto mt-12 mb-6 p-4 md:p-6 bg-blue-50 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4 text-[#1877F2]">Our Facebook Pages</h2>
-        <p className="text-uwinn-purple mb-6">
-          Connect with us on Facebook to stay updated with our latest announcements, events, and promotions:
-        </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Main Facebook Page */}
-          <Card className="shadow-md hover:shadow-xl transition-all duration-300 border border-[#1877F2]/20">
-            <CardHeader className="bg-gradient-to-r from-[#1877F2]/10 to-[#1877F2]/5 pb-4 border-b">
-              <div className="bg-[#1877F2] p-3 rounded-full mb-2 w-12 h-12 mx-auto flex items-center justify-center">
-                <Facebook className="h-6 w-6 text-white" />
-              </div>
-              <CardTitle className="text-lg text-[#1877F2]">UWINN Updates</CardTitle>
-              <CardDescription>Official announcements and updates</CardDescription>
-            </CardHeader>
-            <CardContent className="py-4">
-              <p className="text-sm text-gray-600">
-                Follow our main updates page for official announcements, product releases, and important news.
-              </p>
-            </CardContent>
-            <CardFooter className="bg-gradient-to-r from-[#1877F2]/10 to-[#1877F2]/5 border-t p-4 flex justify-center">
-              <Button 
-                variant="outline"
-                className="border-[#1877F2] text-[#1877F2] hover:bg-[#1877F2]/10"
-                onClick={() => window.open("https://facebook.com/uwinn.updates", "_blank")}
-              >
-                <Facebook className="mr-2 h-4 w-4" />
-                Visit Page
-              </Button>
-            </CardFooter>
-          </Card>
-          
-          {/* Live Facebook Page */}
-          <Card className="shadow-md hover:shadow-xl transition-all duration-300 border border-[#1877F2]/20">
-            <CardHeader className="bg-gradient-to-r from-[#1877F2]/10 to-[#1877F2]/5 pb-4 border-b">
-              <div className="bg-[#1877F2] p-3 rounded-full mb-2 w-12 h-12 mx-auto flex items-center justify-center">
-                <Facebook className="h-6 w-6 text-white" />
-              </div>
-              <CardTitle className="text-lg text-[#1877F2]">UWINN Live</CardTitle>
-              <CardDescription>Live events and community interactions</CardDescription>
-            </CardHeader>
-            <CardContent className="py-4">
-              <p className="text-sm text-gray-600">
-                Join our live community page for interactive sessions, live events, and community discussions.
-              </p>
-            </CardContent>
-            <CardFooter className="bg-gradient-to-r from-[#1877F2]/10 to-[#1877F2]/5 border-t p-4 flex justify-center">
-              <Button 
-                variant="outline"
-                className="border-[#1877F2] text-[#1877F2] hover:bg-[#1877F2]/10"
-                onClick={() => window.open("https://facebook.com/uwinn.live", "_blank")}
-              >
-                <Facebook className="mr-2 h-4 w-4" />
-                Visit Page
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
-      </div>
-      
       {/* Our Digital Platforms Section */}
       <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-4 md:p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-uwinn-purple">Our Digital Platforms</h2>
