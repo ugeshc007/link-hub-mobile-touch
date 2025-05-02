@@ -3,9 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
-import ThemeToggle from "@/components/ThemeToggle";
+import AppScreenshots from "@/components/AppScreenshots";
+import FeaturesSection from "@/components/FeaturesSection";
+import Testimonials from "@/components/Testimonials";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+  
   const openWhatsAppChat = (phoneNumber) => {
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
     window.open(whatsappUrl, '_blank');
@@ -13,15 +18,15 @@ const Index = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      {/* Hero Section with Downloads - Original section */}
-      <div className="w-full uwinn-gradient py-16 px-4">
-        <div className="w-full max-w-3xl mx-auto text-center space-y-8">
+      {/* Hero Section with Downloads - Optimized for mobile */}
+      <div className="w-full uwinn-gradient py-8 md:py-16 px-4">
+        <div className="w-full max-w-3xl mx-auto text-center space-y-6">
           <div className="animate-fade-in">
-            <h1 className="text-5xl font-bold mb-4 text-white">UWINN Mobile App</h1>
-            <p className="text-xl text-gray-200 mb-8">Download our app now for iOS, Android, and Huawei devices</p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 text-white">UWINN Mobile App</h1>
+            <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8">Download our app now for iOS, Android, and Huawei devices</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in" style={{animationDelay: "0.2s"}}>
+          <div className={`grid ${isMobile ? 'grid-cols-1 gap-4' : 'md:grid-cols-3 gap-6'} animate-fade-in`} style={{animationDelay: "0.2s"}}>
             {/* Android Card */}
             <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
               <CardHeader className="bg-green-50 pb-4 border-b">
@@ -137,6 +142,7 @@ const Index = () => {
                 <Button 
                   className="w-full text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                   style={{backgroundColor: "#000000"}}
+                  disabled
                 >
                   <Apple className="mr-2 h-4 w-4" />
                   Coming Soon
@@ -147,17 +153,26 @@ const Index = () => {
         </div>
       </div>
       
+      {/* App Screenshots */}
+      <AppScreenshots />
+      
+      {/* Features Section */}
+      <FeaturesSection />
+      
+      {/* Testimonials */}
+      <Testimonials />
+      
       {/* Our Digital Platforms Section */}
-      <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-6 bg-white rounded-lg shadow-md">
+      <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-4 md:p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-uwinn-purple">Our Digital Platforms</h2>
         <p className="text-uwinn-purple mb-6">
           We're committed to staying connected and accessible wherever you are. You can reach us and stay updated through the following platforms:
         </p>
         
-        <div className="space-y-6">
+        <div className="space-y-4">
           {/* Instagram Platform */}
           <div className="p-4 border border-[#E1306C]/20 rounded-lg bg-gradient-to-r from-[#FCAF45]/5 to-[#E1306C]/5 flex items-start">
-            <div className="bg-gradient-to-br from-[#FCAF45] via-[#E1306C] to-[#833AB4] p-3 rounded-full mr-4 shadow-md">
+            <div className="bg-gradient-to-br from-[#FCAF45] via-[#E1306C] to-[#833AB4] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <Instagram className="h-6 w-6 text-white" />
             </div>
             <div className="text-left">
@@ -165,7 +180,7 @@ const Index = () => {
                 <span>Instagram</span>
               </h3>
               <p className="text-uwinn-purple/90 mt-1">
-                Follow us on Instagram for quick updates, behind-the-scenes glimpses, and engaging visual content that brings our brand to life.
+                Follow us on Instagram for quick updates, behind-the-scenes glimpses, and engaging visual content.
               </p>
               <Button 
                 variant="outline" 
@@ -181,7 +196,7 @@ const Index = () => {
           
           {/* Facebook Platform */}
           <div className="p-4 border border-[#1877F2]/20 rounded-lg bg-[#1877F2]/5 flex items-start">
-            <div className="bg-[#1877F2] p-3 rounded-full mr-4 shadow-md">
+            <div className="bg-[#1877F2] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <Facebook className="h-6 w-6 text-white" />
             </div>
             <div className="text-left">
@@ -189,7 +204,7 @@ const Index = () => {
                 <span>Facebook</span>
               </h3>
               <p className="text-uwinn-purple/90 mt-1">
-                Join our Facebook community to connect with our team, stay informed on announcements, promotions, and customer support.
+                Join our Facebook community to connect with our team, stay informed on announcements and promotions.
               </p>
               <Button 
                 variant="outline" 
@@ -205,7 +220,7 @@ const Index = () => {
 
           {/* YouTube Platform */}
           <div className="p-4 border border-[#FF0000]/20 rounded-lg bg-[#FF0000]/5 flex items-start">
-            <div className="bg-[#FF0000] p-3 rounded-full mr-4 shadow-md">
+            <div className="bg-[#FF0000] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <Youtube className="h-6 w-6 text-white" />
             </div>
             <div className="text-left">
@@ -213,7 +228,7 @@ const Index = () => {
                 <span>YouTube</span>
               </h3>
               <p className="text-uwinn-purple/90 mt-1">
-                Subscribe to our YouTube channel for video tutorials, product demonstrations, and exclusive content about our services and offerings.
+                Subscribe to our YouTube channel for video tutorials, product demonstrations, and exclusive content.
               </p>
               <Button 
                 variant="outline" 
@@ -229,7 +244,7 @@ const Index = () => {
           
           {/* WhatsApp Platform */}
           <div className="p-4 border border-[#25D366]/20 rounded-lg bg-[#25D366]/5 flex items-start">
-            <div className="bg-[#25D366] p-3 rounded-full mr-4 shadow-md">
+            <div className="bg-[#25D366] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
                 <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
@@ -284,9 +299,6 @@ const Index = () => {
       
       {/* Stats Section */}
       <StatsSection />
-      
-      {/* Theme Toggle */}
-      <ThemeToggle />
     </div>
   );
 };

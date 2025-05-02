@@ -7,8 +7,11 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const AppScreenshots = () => {
+  const isMobile = useIsMobile();
+  
   const screenshots = [
     {
       src: "/lovable-uploads/515efab5-037c-42b8-9319-aed74d6acd7c.png",
@@ -29,26 +32,26 @@ const AppScreenshots = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-12">
-      <div className="flex items-center justify-center gap-2 mb-6">
-        <FileImage className="text-uwinn-purple h-6 w-6" />
-        <h2 className="text-2xl font-semibold text-uwinn-purple">App Screenshots</h2>
+    <div className="w-full max-w-4xl mx-auto my-8 md:my-12 px-4">
+      <div className="flex items-center justify-center gap-2 mb-4 md:mb-6">
+        <FileImage className="text-uwinn-purple h-5 md:h-6 w-5 md:w-6" />
+        <h2 className="text-xl md:text-2xl font-semibold text-uwinn-purple">App Screenshots</h2>
       </div>
       
       <Carousel className="w-full">
         <CarouselContent>
           {screenshots.map((screenshot, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className={isMobile ? "basis-full" : "md:basis-1/2 lg:basis-1/3"}>
               <div className="p-1">
                 <div className="overflow-hidden rounded-xl border border-uwinn-purple/20 shadow-lg">
-                  <div className="bg-uwinn-purple p-2 text-center text-white text-sm">
+                  <div className="bg-uwinn-purple p-2 text-center text-white text-xs md:text-sm">
                     UWINN Mobile App
                   </div>
-                  <div className="p-3 bg-gradient-to-b from-white to-gray-50">
+                  <div className="p-2 md:p-3 bg-gradient-to-b from-white to-gray-50">
                     <img
                       src={screenshot.src}
                       alt={screenshot.alt}
-                      className="h-60 w-full object-contain rounded-lg animate-fade-in"
+                      className="h-48 md:h-60 w-full object-contain rounded-lg animate-fade-in"
                     />
                   </div>
                 </div>

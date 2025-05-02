@@ -1,6 +1,7 @@
 
 import { MessageSquareHeart } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const testimonials = [
   {
@@ -25,6 +26,7 @@ const testimonials = [
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,25 +36,25 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-4xl mx-auto py-12 px-4">
-      <div className="flex items-center justify-center gap-2 mb-8">
-        <MessageSquareHeart className="text-uwinn-purple h-6 w-6" />
-        <h2 className="text-2xl font-semibold text-uwinn-purple">What Our Users Say</h2>
+    <div className="w-full max-w-4xl mx-auto py-8 md:py-12 px-4">
+      <div className="flex items-center justify-center gap-2 mb-6 md:mb-8">
+        <MessageSquareHeart className="text-uwinn-purple h-5 md:h-6 w-5 md:w-6" />
+        <h2 className="text-xl md:text-2xl font-semibold text-uwinn-purple">What Our Users Say</h2>
       </div>
       
-      <div className="relative h-64">
+      <div className="relative h-auto md:h-64">
         {testimonials.map((testimonial, idx) => (
           <div 
             key={idx}
-            className={`absolute w-full transition-all duration-500 transform ${
+            className={`${isMobile ? "" : "absolute w-full"} transition-all duration-500 transform ${
               idx === activeIndex 
                 ? "opacity-100 translate-x-0" 
-                : "opacity-0 translate-x-full"
+                : "opacity-0 translate-x-full hidden md:block"
             }`}
           >
-            <div className="bg-white rounded-lg shadow-lg p-6 border border-uwinn-purple/20">
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 rounded-full bg-uwinn-purple text-white flex items-center justify-center font-bold mr-3">
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 border border-uwinn-purple/20">
+              <div className="flex items-center mb-3 md:mb-4">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-uwinn-purple text-white flex items-center justify-center font-bold mr-3">
                   {testimonial.avatar}
                 </div>
                 <div>
@@ -61,7 +63,7 @@ const Testimonials = () => {
                     {Array.from({ length: 5 }).map((_, i) => (
                       <svg 
                         key={i} 
-                        className={`w-4 h-4 ${i < testimonial.rating ? "text-yellow-500" : "text-gray-300"}`}
+                        className={`w-3 h-3 md:w-4 md:h-4 ${i < testimonial.rating ? "text-yellow-500" : "text-gray-300"}`}
                         fill="currentColor" 
                         viewBox="0 0 20 20"
                       >
@@ -71,7 +73,7 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 italic">&ldquo;{testimonial.text}&rdquo;</p>
+              <p className="text-sm md:text-base text-gray-600 italic">&ldquo;{testimonial.text}&rdquo;</p>
             </div>
           </div>
         ))}
@@ -82,7 +84,7 @@ const Testimonials = () => {
           <button
             key={idx}
             onClick={() => setActiveIndex(idx)}
-            className={`w-2.5 h-2.5 rounded-full ${
+            className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full ${
               idx === activeIndex ? "bg-uwinn-purple" : "bg-gray-300"
             }`}
             aria-label={`Go to testimonial ${idx + 1}`}
