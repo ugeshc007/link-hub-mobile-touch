@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
@@ -43,13 +44,6 @@ const Index = () => {
                   </div>
                   <div className="text-center mt-1 font-bold text-sm">Play Store</div>
                 </div>
-                <div className="flex justify-center items-center gap-2">
-                  <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-1"></span>
-                    AVAILABLE
-                  </span>
-                  <span className="text-xs text-gray-500">v1.2.5</span>
-                </div>
               </CardContent>
               <CardFooter className="bg-green-50 border-t p-3">
                 <Button 
@@ -89,13 +83,6 @@ const Index = () => {
                   />
                   <div className="text-center mt-1 font-bold text-sm">AppGallery</div>
                 </div>
-                <div className="flex justify-center items-center gap-2">
-                  <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
-                    <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-1"></span>
-                    AVAILABLE
-                  </span>
-                  <span className="text-xs text-gray-500">v1.2.5</span>
-                </div>
               </CardContent>
               <CardFooter className="bg-red-50 border-t p-3">
                 <Button 
@@ -126,12 +113,6 @@ const Index = () => {
                 <div className="flex flex-col items-center py-3 bg-gray-50 rounded-lg border border-gray-100 mb-3">
                   <Apple className="h-12 w-12 text-black" />
                   <div className="text-center mt-1 font-bold text-sm">App Store</div>
-                </div>
-                <div className="flex justify-center items-center gap-2">
-                  <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-semibold inline-flex items-center">
-                    <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-1"></span>
-                    COMING SOON
-                  </span>
                 </div>
               </CardContent>
               <CardFooter className="bg-gray-50 border-t p-3">
