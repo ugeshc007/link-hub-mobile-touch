@@ -8,8 +8,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
-import { Sheet, SheetContent, SheetTrigger } from "./components/ui/sheet";
-import { Menu } from "lucide-react";
 
 const queryClient = new QueryClient();
 
@@ -20,30 +18,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
-          {/* Mobile Menu */}
-          <div className="fixed top-4 right-4 z-50">
-            <Sheet>
-              <SheetTrigger asChild>
-                <button className="bg-uwinn-purple text-white p-2 rounded-full shadow-lg">
-                  <Menu className="h-6 w-6" />
-                </button>
-              </SheetTrigger>
-              <SheetContent>
-                <nav className="flex flex-col gap-4 mt-8">
-                  <a href="/" className="px-4 py-2 hover:bg-uwinn-purple/10 rounded-md transition-colors">
-                    Home
-                  </a>
-                  <a href="/faq" className="px-4 py-2 hover:bg-uwinn-purple/10 rounded-md transition-colors">
-                    FAQ
-                  </a>
-                  <a href="/contact" className="px-4 py-2 hover:bg-uwinn-purple/10 rounded-md transition-colors">
-                    Contact
-                  </a>
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </div>
-          
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
