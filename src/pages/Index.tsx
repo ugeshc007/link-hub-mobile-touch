@@ -5,12 +5,16 @@ import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, 
 import StatsSection from "@/components/StatsSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Badge } from "@/components/ui/badge";
+import Header from "@/components/Header";
 
 const Index = () => {
   const isMobile = useIsMobile();
 
   return (
     <div className="flex flex-col items-center justify-center">
+      {/* Add Header */}
+      <Header />
+      
       {/* Hero Section with Downloads - Optimized for mobile */}
       <div className="w-full uwinn-gradient py-8 md:py-16 px-4">
         <div className="w-full max-w-3xl mx-auto text-center space-y-6">
@@ -118,17 +122,17 @@ const Index = () => {
         </div>
       </div>
       
-      {/* Our Digital Platforms Section */}
-      <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-4 md:p-6 bg-white rounded-lg shadow-md">
+      {/* Our Digital Platforms Section - Mobile Optimized */}
+      <div className="w-full max-w-3xl mx-auto mt-8 md:mt-12 mb-8 md:mb-12 p-4 md:p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-uwinn-purple">Our Digital Platforms</h2>
-        <p className="text-uwinn-purple mb-6">
+        <p className="text-uwinn-purple mb-4 md:mb-6">
           We're committed to staying connected and accessible wherever you are. You can reach us and stay updated through the following platforms:
         </p>
         
         <div className="space-y-4">
-          {/* Instagram Platform */}
-          <div className="p-4 border border-[#E1306C]/20 rounded-lg bg-gradient-to-r from-[#FCAF45]/5 to-[#E1306C]/5 flex items-start">
-            <div className="bg-gradient-to-br from-[#FCAF45] via-[#E1306C] to-[#833AB4] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
+          {/* Instagram Platform - Better spacing for mobile */}
+          <div className="p-3 md:p-4 border border-[#E1306C]/20 rounded-lg bg-gradient-to-r from-[#FCAF45]/5 to-[#E1306C]/5 flex flex-col md:flex-row items-start">
+            <div className="bg-gradient-to-br from-[#FCAF45] via-[#E1306C] to-[#833AB4] p-3 rounded-full mb-3 md:mb-0 md:mr-4 shadow-md flex-shrink-0 self-center md:self-start">
               <Instagram className="h-6 w-6 text-white" />
             </div>
             <div className="text-left w-full">
@@ -139,7 +143,7 @@ const Index = () => {
                 Follow us on Instagram for quick updates, behind-the-scenes glimpses, and engaging visual content.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+              <div className="grid grid-cols-1 gap-3 mt-3">
                 <Button 
                   variant="outline" 
                   size="sm" 
@@ -163,9 +167,9 @@ const Index = () => {
             </div>
           </div>
           
-          {/* YouTube Platform */}
-          <div className="p-4 border border-[#FF0000]/20 rounded-lg bg-[#FF0000]/5 flex items-start">
-            <div className="bg-[#FF0000] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
+          {/* YouTube Platform - Better spacing for mobile */}
+          <div className="p-3 md:p-4 border border-[#FF0000]/20 rounded-lg bg-[#FF0000]/5 flex flex-col md:flex-row items-start">
+            <div className="bg-[#FF0000] p-3 rounded-full mb-3 md:mb-0 md:mr-4 shadow-md flex-shrink-0 self-center md:self-start">
               <Youtube className="h-6 w-6 text-white" />
             </div>
             <div className="text-left w-full">
@@ -176,7 +180,7 @@ const Index = () => {
                 Subscribe to our YouTube channels for video tutorials, product demonstrations, and exclusive content.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+              <div className="grid grid-cols-1 gap-3 mt-3">
                 <Button 
                   variant="outline" 
                   size="sm" 
@@ -200,9 +204,9 @@ const Index = () => {
             </div>
           </div>
           
-          {/* WhatsApp Platform */}
-          <div className="p-4 border border-[#25D366]/20 rounded-lg bg-[#25D366]/5 flex items-start">
-            <div className="bg-[#25D366] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
+          {/* WhatsApp Platform - Better spacing for mobile */}
+          <div className="p-3 md:p-4 border border-[#25D366]/20 rounded-lg bg-[#25D366]/5 flex flex-col md:flex-row items-start">
+            <div className="bg-[#25D366] p-3 rounded-full mb-3 md:mb-0 md:mr-4 shadow-md flex-shrink-0 self-center md:self-start">
               <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path>
                 <path d="M9 10a0.5 0.5 0 0 0 1 0V9a0.5 0.5 0 0 0-1 0v1zm0 0a5 5 0 0 0 5 5h1a0.5 0.5 0 0 0 0-1h-1a0.5 0.5 0 0 0 0 1"></path>
@@ -219,7 +223,7 @@ const Index = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="border-[#25D366]/30 text-[#25D366] hover:bg-[#25D366]/10"
+                  className="border-[#25D366]/30 text-[#25D366] hover:bg-[#25D366]/10 text-xs md:text-sm"
                   onClick={() => window.open("https://api.whatsapp.com/send/?phone=971564367791&text=Hello%20there!&type=phone_number&app_absent=0", "_blank")}
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
