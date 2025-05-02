@@ -5,22 +5,26 @@ import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, 
 import StatsSection from "@/components/StatsSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Badge } from "@/components/ui/badge";
-import Header from "@/components/Header";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const isMobile = useIsMobile();
 
   return (
     <div className="flex flex-col items-center justify-center">
-      {/* Add Header */}
-      <Header />
-      
       {/* Hero Section with Downloads - Optimized for mobile */}
       <div className="w-full uwinn-gradient py-8 md:py-16 px-4">
         <div className="w-full max-w-3xl mx-auto text-center space-y-6">
-          <div className="animate-fade-in">
-            <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 text-white">UWINN Mobile App</h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8">Download our app now for iOS, Android, and Huawei devices</p>
+          <div className="animate-fade-in flex flex-col md:flex-row items-center justify-center gap-4">
+            <img 
+              src="/lovable-uploads/f65f0e03-213e-462f-9e2e-3b4374087774.png" 
+              alt="UWINN Logo" 
+              className="h-16 w-auto" 
+            />
+            <div>
+              <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 text-white">UWINN Mobile App</h1>
+              <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8">Download our app now for iOS, Android, and Huawei devices</p>
+            </div>
           </div>
           
           <div className={`grid ${isMobile ? 'grid-cols-1 gap-4' : 'md:grid-cols-3 gap-6'} animate-fade-in`} style={{animationDelay: "0.2s"}}>
