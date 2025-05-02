@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
@@ -149,9 +148,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-      
-      {/* Features Section */}
-      <FeaturesSection />
       
       {/* Our Digital Platforms Section */}
       <div className="w-full max-w-3xl mx-auto mt-12 mb-12 p-4 md:p-6 bg-white rounded-lg shadow-md">
