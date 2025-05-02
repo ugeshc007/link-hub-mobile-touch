@@ -162,7 +162,7 @@ const Index = () => {
                   variant="outline" 
                   size="sm" 
                   className="border-[#E1306C]/30 text-[#E1306C] hover:bg-[#E1306C]/10"
-                  onClick={() => window.open("http://Instagram.com/@uwinn.live", "_blank")}
+                  onClick={() => window.open("https://www.instagram.com/uwinn.live", "_blank")}
                 >
                   <Instagram className="h-4 w-4 mr-2" />
                   UWINN Live
