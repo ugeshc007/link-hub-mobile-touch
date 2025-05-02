@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, CheckCircle } from "lucide-react";
@@ -216,22 +217,35 @@ const Index = () => {
             <div className="bg-[#1877F2] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <Facebook className="h-6 w-6 text-white" />
             </div>
-            <div className="text-left">
+            <div className="text-left w-full">
               <h3 className="text-lg font-medium text-[#1877F2] flex items-center">
                 <span>Facebook</span>
               </h3>
               <p className="text-uwinn-purple/90 mt-1">
                 Join our Facebook community to connect with our team, stay informed on announcements and promotions.
               </p>
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="mt-3 border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
-                onClick={() => window.open("https://www.facebook.com/uwinn.updates", "_blank")}
-              >
-                <Facebook className="h-4 w-4 mr-2" />
-                Join Us
-              </Button>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
+                  onClick={() => window.open("https://www.facebook.com/uwinn.updates", "_blank")}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  UWINN Updates
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
+                  onClick={() => window.open("https://facebook.com/uwinn.live", "_blank")}
+                >
+                  <Facebook className="h-4 w-4 mr-2" />
+                  UWINN Live
+                </Button>
+              </div>
             </div>
           </div>
 
