@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube } from "lucide-react";
+import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -23,7 +23,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8">Download our app now for iOS, Android, and Huawei devices</p>
           </div>
           
-          <div className={`grid ${isMobile ? 'grid-cols-1 gap-4' : 'md:grid-cols-3 gap-6'} animate-fade-in`} style={{animationDelay: "0.2s"}}>
+          <div className={`grid ${isMobile ? 'grid-cols-1 gap-4' : 'md:grid-cols-4 gap-6'} animate-fade-in`} style={{animationDelay: "0.2s"}}>
             {/* Android Card */}
             <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
               <CardHeader className="bg-green-50 pb-4 border-b">
@@ -98,6 +98,28 @@ const Index = () => {
                 >
                   <Apple className="mr-2 h-4 w-4" />
                   Coming Soon
+                </Button>
+              </CardFooter>
+            </Card>
+            
+            {/* New Web App Card */}
+            <Card className="shadow-lg hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+              <CardHeader className="bg-blue-50 pb-4 border-b">
+                <div className="w-12 h-12 mx-auto bg-[#0072CE] rounded-full flex items-center justify-center mb-2">
+                  <Globe className="h-6 w-6 text-white" />
+                </div>
+                <CardTitle className="text-lg">Web Version</CardTitle>
+                <CardDescription>Available Online</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow"></CardContent>
+              <CardFooter className="bg-blue-50 border-t p-3">
+                <Button 
+                  className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
+                  style={{backgroundColor: "#000000"}}
+                  onClick={() => window.open("https://uwinn.com", "_blank")}
+                >
+                  <Globe className="mr-2 h-4 w-4" />
+                  Open Website
                 </Button>
               </CardFooter>
             </Card>
