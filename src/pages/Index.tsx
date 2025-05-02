@@ -254,22 +254,35 @@ const Index = () => {
             <div className="bg-[#FF0000] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <Youtube className="h-6 w-6 text-white" />
             </div>
-            <div className="text-left">
+            <div className="text-left w-full">
               <h3 className="text-lg font-medium text-[#FF0000] flex items-center">
                 <span>YouTube</span>
               </h3>
               <p className="text-uwinn-purple/90 mt-1">
-                Subscribe to our YouTube channel for video tutorials, product demonstrations, and exclusive content.
+                Subscribe to our YouTube channels for video tutorials, product demonstrations, and exclusive content.
               </p>
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="mt-3 border-[#FF0000]/30 text-[#FF0000] hover:bg-[#FF0000]/10"
-                onClick={() => window.open("https://youtube.com/@uwinn-live?si=tNDbTwU-pQlEJnku", "_blank")}
-              >
-                <Youtube className="h-4 w-4 mr-2" />
-                Subscribe
-              </Button>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-[#FF0000]/30 text-[#FF0000] hover:bg-[#FF0000]/10"
+                  onClick={() => window.open("https://youtube.com/@uwinn-live?si=tNDbTwU-pQlEJnku", "_blank")}
+                >
+                  <Youtube className="h-4 w-4 mr-2" />
+                  UWINN Live
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="border-[#FF0000]/30 text-[#FF0000] hover:bg-[#FF0000]/10"
+                  onClick={() => window.open("https://youtube.com/@uwinn-tutorials", "_blank")}
+                >
+                  <Youtube className="h-4 w-4 mr-2" />
+                  UWINN Tutorials
+                </Button>
+              </div>
             </div>
           </div>
           
