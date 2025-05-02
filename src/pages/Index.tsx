@@ -33,18 +33,7 @@ const Index = () => {
                 <CardTitle className="text-lg">Android App</CardTitle>
                 <CardDescription>Get it on Google Play</CardDescription>
               </CardHeader>
-              <CardContent className="p-4 flex-grow">
-                <div className="flex flex-col items-center py-3 bg-green-50 rounded-lg border border-green-100 mb-3">
-                  <div className="bg-white p-1 rounded-lg shadow-md">
-                    <img 
-                      src="/lovable-uploads/9e35edaa-5ef7-4ffb-9e3c-acafed4674dc.png" 
-                      alt="Google Play Store" 
-                      className="w-12 h-12 object-contain" 
-                    />
-                  </div>
-                  <div className="text-center mt-1 font-bold text-sm">Play Store</div>
-                </div>
-              </CardContent>
+              <CardContent className="flex-grow"></CardContent>
               <CardFooter className="bg-green-50 border-t p-3">
                 <Button 
                   className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
@@ -74,16 +63,7 @@ const Index = () => {
                 <CardTitle className="text-lg">Huawei App</CardTitle>
                 <CardDescription>Available on AppGallery</CardDescription>
               </CardHeader>
-              <CardContent className="p-4 flex-grow">
-                <div className="flex flex-col items-center py-3 bg-red-50 rounded-lg border border-red-100 mb-3">
-                  <img 
-                    src="/lovable-uploads/79861206-cbda-4ce0-96fa-a8b3d2ad9548.png" 
-                    alt="Huawei AppGallery" 
-                    className="w-12 h-12 object-contain drop-shadow-md" 
-                  />
-                  <div className="text-center mt-1 font-bold text-sm">AppGallery</div>
-                </div>
-              </CardContent>
+              <CardContent className="flex-grow"></CardContent>
               <CardFooter className="bg-red-50 border-t p-3">
                 <Button 
                   className="w-full font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl text-white" 
@@ -109,12 +89,7 @@ const Index = () => {
                 <CardTitle className="text-lg">iOS App</CardTitle>
                 <CardDescription>Coming Soon to App Store</CardDescription>
               </CardHeader>
-              <CardContent className="p-4 flex-grow">
-                <div className="flex flex-col items-center py-3 bg-gray-50 rounded-lg border border-gray-100 mb-3">
-                  <Apple className="h-12 w-12 text-black" />
-                  <div className="text-center mt-1 font-bold text-sm">App Store</div>
-                </div>
-              </CardContent>
+              <CardContent className="flex-grow"></CardContent>
               <CardFooter className="bg-gray-50 border-t p-3">
                 <Button 
                   className="w-full text-white font-semibold rounded-md shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
