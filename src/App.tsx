@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
+import Header from "./components/Header";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
+          <Header />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
