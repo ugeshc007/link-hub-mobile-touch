@@ -1,8 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe } from "lucide-react";
+import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, CheckCircle } from "lucide-react";
 import StatsSection from "@/components/StatsSection";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -20,6 +22,24 @@ const Index = () => {
           <div className="animate-fade-in">
             <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 text-white">UWINN Mobile App</h1>
             <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8">Download our app now for iOS, Android, and Huawei devices</p>
+          </div>
+
+          {/* Status Card */}
+          <div className="flex justify-center mb-6">
+            <Card className="animate-fade-in w-full max-w-xs bg-white/95 shadow-md border border-green-200">
+              <CardContent className="p-4 flex items-center space-x-3">
+                <div className="bg-green-100 p-2 rounded-full">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium text-uwinn-purple">Status</h3>
+                    <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">Available</Badge>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-1">Current Version: 2.5.1</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
           
           <div className={`grid ${isMobile ? 'grid-cols-1 gap-4' : 'md:grid-cols-3 gap-6'} animate-fade-in`} style={{animationDelay: "0.2s"}}>
