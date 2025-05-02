@@ -4,11 +4,6 @@ import { Facebook, Instagram, Twitter, HelpCircle, MessageCircle } from "lucide-
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  const openWhatsAppChat = (phoneNumber) => {
-    const whatsappUrl = `https://wa.me/${phoneNumber}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   return (
     <footer className="bg-uwinn-dark text-white">
@@ -82,13 +77,15 @@ const Footer = () => {
             <a href="mailto:contact@uwinn.app" className="text-gray-300 hover:text-uwinn-accent transition-colors block mb-2">
               contact@uwinn.app
             </a>
-            <button 
-              onClick={() => openWhatsAppChat("97156437791")} 
-              className="text-gray-300 hover:text-uwinn-accent transition-colors flex items-center gap-2 mb-2 cursor-pointer bg-transparent border-none p-0"
+            <a 
+              href="https://api.whatsapp.com/send/?phone=971564367791&text=Hello%20there!&type=phone_number&app_absent=0" 
+              target="_blank"
+              rel="noreferrer" 
+              className="text-gray-300 hover:text-uwinn-accent transition-colors flex items-center gap-2 mb-2"
             >
               <MessageCircle size={16} />
-              Customer Care: +971 56437791
-            </button>
+              Customer Care: +971 564367791
+            </a>
             <a href="https://whatsapp.com/channel/0029Vaa3hUQCXC3DdWFL3Z2d" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors">
               WhatsApp Channel
             </a>

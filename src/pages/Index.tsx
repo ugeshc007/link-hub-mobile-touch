@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, CheckCircle } from "lucide-react";
@@ -7,11 +8,6 @@ import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   const isMobile = useIsMobile();
-  
-  const openWhatsAppChat = (phoneNumber) => {
-    const whatsappUrl = `https://wa.me/${phoneNumber}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -222,10 +218,10 @@ const Index = () => {
                   variant="outline" 
                   size="sm" 
                   className="border-[#25D366]/30 text-[#25D366] hover:bg-[#25D366]/10"
-                  onClick={() => openWhatsAppChat("97156437791")}
+                  onClick={() => window.open("https://api.whatsapp.com/send/?phone=971564367791&text=Hello%20there!&type=phone_number&app_absent=0", "_blank")}
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
-                  Customer Care: +971 56437791
+                  Customer Care: +971 564367791
                 </Button>
                 <Button 
                   variant="outline" 
