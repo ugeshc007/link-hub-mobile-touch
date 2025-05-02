@@ -23,6 +23,9 @@ const Footer = () => {
               <a href="https://facebook.com/uwinn.updates" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors">
                 <Facebook size={20} />
               </a>
+              <a href="https://facebook.com/uwinn.live" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-uwinn-accent transition-colors">
+                <Facebook size={20} />
+              </a>
               <a href="#" className="text-gray-300 hover:text-uwinn-accent transition-colors">
                 <Twitter size={20} />
               </a>
