@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Apple, Smartphone, Instagram, Facebook, MessageCircle, Youtube, Globe, CheckCircle } from "lucide-react";
@@ -131,62 +130,38 @@ const Index = () => {
             <div className="bg-gradient-to-br from-[#FCAF45] via-[#E1306C] to-[#833AB4] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
               <Instagram className="h-6 w-6 text-white" />
             </div>
-            <div className="text-left">
+            <div className="text-left w-full">
               <h3 className="text-lg font-medium text-[#E1306C] flex items-center">
                 <span>Instagram</span>
               </h3>
               <p className="text-uwinn-purple/90 mt-1">
                 Follow us on Instagram for quick updates, behind-the-scenes glimpses, and engaging visual content.
               </p>
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="mt-3 border-[#E1306C]/30 text-[#E1306C] hover:bg-[#E1306C]/10"
-                onClick={() => window.open("https://www.instagram.com/uwinn.official", "_blank")}
-              >
-                <Instagram className="h-4 w-4 mr-2" />
-                Follow Us
-              </Button>
-            </div>
-          </div>
-          
-          {/* Facebook Platform */}
-          <div className="p-4 border border-[#1877F2]/20 rounded-lg bg-[#1877F2]/5 flex items-start">
-            <div className="bg-[#1877F2] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
-              <Facebook className="h-6 w-6 text-white" />
-            </div>
-            <div className="text-left w-full">
-              <h3 className="text-lg font-medium text-[#1877F2] flex items-center">
-                <span>Facebook</span>
-              </h3>
-              <p className="text-uwinn-purple/90 mt-1">
-                Join our Facebook community to connect with our team, stay informed on announcements and promotions.
-              </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
-                  onClick={() => window.open("https://www.facebook.com/uwinn.updates", "_blank")}
+                  className="border-[#E1306C]/30 text-[#E1306C] hover:bg-[#E1306C]/10"
+                  onClick={() => window.open("https://www.instagram.com/uwinn.official", "_blank")}
                 >
-                  <Facebook className="h-4 w-4 mr-2" />
-                  UWINN Updates
+                  <Instagram className="h-4 w-4 mr-2" />
+                  UWINN Official
                 </Button>
                 
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2]/10"
-                  onClick={() => window.open("https://facebook.com/uwinn.live", "_blank")}
+                  className="border-[#E1306C]/30 text-[#E1306C] hover:bg-[#E1306C]/10"
+                  onClick={() => window.open("http://Instagram.com/@uwinn.live", "_blank")}
                 >
-                  <Facebook className="h-4 w-4 mr-2" />
+                  <Instagram className="h-4 w-4 mr-2" />
                   UWINN Live
                 </Button>
               </div>
             </div>
           </div>
-
+          
           {/* YouTube Platform */}
           <div className="p-4 border border-[#FF0000]/20 rounded-lg bg-[#FF0000]/5 flex items-start">
             <div className="bg-[#FF0000] p-3 rounded-full mr-4 shadow-md flex-shrink-0">
