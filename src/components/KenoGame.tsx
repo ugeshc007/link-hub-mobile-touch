@@ -183,7 +183,7 @@ const KenoGame = () => {
 
           {/* Results Banner */}
           {gamePhase === "results" && (
-            <div className={`text-center p-4 rounded-xl mb-4 animate-scale-in ${
+            <div className={`text-center p-3 md:p-4 rounded-xl mb-3 md:mb-4 animate-scale-in ${
               hits.length >= 5
                 ? "bg-gradient-to-r from-yellow-500/20 via-uwinn-accent/20 to-yellow-500/20 border border-uwinn-accent/30"
                 : hits.length >= 3
