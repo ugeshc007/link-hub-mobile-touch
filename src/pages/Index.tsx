@@ -103,7 +103,7 @@ const Index = () => {
               return (
                 <div 
                   key={platform.name}
-                  className={`p-4 md:p-5 border ${platform.borderColor} rounded-xl ${platform.gradientBg} flex flex-col md:flex-row items-start transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group`}
+                  className={`p-3 md:p-5 border ${platform.borderColor} rounded-xl ${platform.gradientBg} flex items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className={`${platform.iconBg} p-3.5 rounded-2xl mb-3 md:mb-0 md:mr-4 shadow-lg flex-shrink-0 self-center md:self-start transition-transform duration-300 group-hover:scale-110`}>
