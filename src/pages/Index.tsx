@@ -106,8 +106,8 @@ const Index = () => {
                   className={`p-3 md:p-5 border ${platform.borderColor} rounded-xl ${platform.gradientBg} flex items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className={`${platform.iconBg} p-3.5 rounded-2xl mb-3 md:mb-0 md:mr-4 shadow-lg flex-shrink-0 self-center md:self-start transition-transform duration-300 group-hover:scale-110`}>
-                    <Icon className="h-6 w-6 text-white" />
+                  <div className={`${platform.iconBg} p-2.5 md:p-3.5 rounded-xl md:rounded-2xl mr-3 md:mr-4 shadow-lg flex-shrink-0 transition-transform duration-300 group-hover:scale-110`}>
+                    <Icon className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div className="text-left w-full">
                     <h3 className="text-lg font-semibold" style={{ color: platform.color }}>
