@@ -97,7 +97,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {platforms.map((platform, index) => {
               const Icon = platform.icon;
               return (
