@@ -106,11 +106,11 @@ const KenoGame = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.1),transparent_70%)]" />
           <div className="relative z-10">
             <div className="flex items-center justify-center gap-2 mb-1">
-              <Zap className="h-5 w-5 text-uwinn-accent" />
-              <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-wide">INSTANT KENO</h2>
-              <Zap className="h-5 w-5 text-uwinn-accent" />
+              <Zap className="h-4 w-4 md:h-5 md:w-5 text-uwinn-accent" />
+              <h2 className="text-xl md:text-3xl font-extrabold text-white tracking-wide">INSTANT KENO</h2>
+              <Zap className="h-4 w-4 md:h-5 md:w-5 text-uwinn-accent" />
             </div>
-            <p className="text-white/60 text-sm">Pick up to {MAX_PICKS} numbers, then draw!</p>
+            <p className="text-white/60 text-xs md:text-sm">Pick up to {MAX_PICKS} numbers, then draw!</p>
           </div>
         </div>
 
