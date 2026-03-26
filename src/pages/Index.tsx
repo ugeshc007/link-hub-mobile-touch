@@ -91,7 +91,7 @@ const Index = () => {
       <div className="w-full max-w-3xl mx-auto -mt-6 mb-6 md:mb-12 px-3 md:px-4">
         <div className="bg-white rounded-2xl shadow-xl p-4 md:p-8 border border-border/50">
           <div className="text-center mb-6 md:mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-uwinn-purple">Our Digital Platforms</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-uwinn-purple">Our Digital Platforms</h2>
             <p className="text-uwinn-purple/60 mt-2 max-w-lg mx-auto text-sm md:text-base">
               Stay connected and accessible wherever you are
             </p>
