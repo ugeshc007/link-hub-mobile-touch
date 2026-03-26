@@ -74,7 +74,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/instwin-logo.png" 
                 alt="InstWin Logo" 
-                className="h-40 md:h-52 w-auto relative z-10 drop-shadow-2xl hover-scale" 
+                className="h-32 sm:h-40 md:h-52 w-auto relative z-10 drop-shadow-2xl hover-scale" 
               />
             </div>
             <p className="text-sm md:text-base uppercase tracking-[0.4em] text-white/70 font-light">Welcome</p>
