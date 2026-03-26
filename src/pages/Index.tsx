@@ -3,6 +3,7 @@ import { Instagram, Facebook, Youtube, MessageCircle, Sparkles } from "lucide-re
 import { Button } from "@/components/ui/button";
 import StatsSection from "@/components/StatsSection";
 import KenoGame from "@/components/KenoGame";
+import LottoBalls from "@/components/LottoBalls";
 
 const platforms = [
   {
@@ -78,7 +79,8 @@ const Index = () => {
               />
             </div>
             <p className="text-sm md:text-base uppercase tracking-[0.4em] text-white/70 font-light">Welcome</p>
-            <div className="flex items-center justify-center gap-2">
+            <LottoBalls />
+            <div className="flex items-center justify-center gap-2 -mt-2">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-white/40" />
               <Sparkles className="h-4 w-4 text-uwinn-accent" />
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-white/40" />
