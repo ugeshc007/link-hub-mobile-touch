@@ -193,7 +193,7 @@ const KenoGame = () => {
               <p className="text-xl md:text-3xl font-extrabold text-white mb-1">
                 {hits.length >= 7 ? "🎉 JACKPOT! 🎉" : hits.length >= 5 ? "🔥 BIG WIN!" : hits.length >= 3 ? "✨ Nice Hit!" : hits.length > 0 ? "Keep Trying!" : "No Luck 😅"}
               </p>
-              <p className="text-white/60 text-sm">
+              <p className="text-white/60 text-xs md:text-sm">
                 You matched <strong className="text-green-400">{hits.length}</strong> out of {selectedNumbers.length} picks
               </p>
             </div>
