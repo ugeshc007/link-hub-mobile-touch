@@ -140,8 +140,8 @@ const KenoGame = () => {
           </div>
 
           {/* Info Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-3 mb-4 px-1">
-            <div className="flex items-center gap-4 text-white/80 text-sm">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-3 md:mb-4 px-1">
+            <div className="flex items-center gap-3 text-white/80 text-xs md:text-sm">
               <span>Picked: <strong className="text-uwinn-accent">{selectedNumbers.length}/{MAX_PICKS}</strong></span>
               {gamePhase !== "picking" && (
                 <span>Hits: <strong className="text-green-400">{hits.length}</strong></span>
