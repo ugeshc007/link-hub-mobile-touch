@@ -164,7 +164,7 @@ const KenoGame = () => {
                   <div
                     key={num}
                     className={`
-                      w-9 h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center font-bold text-sm
+                      w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center font-bold text-xs md:text-sm
                       border-2 transition-all duration-500
                       ${i < revealedCount
                         ? selectedNumbers.includes(num)
