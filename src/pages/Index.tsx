@@ -110,10 +110,10 @@ const Index = () => {
                     <Icon className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div className="text-left w-full">
-                    <h3 className="text-lg font-semibold" style={{ color: platform.color }}>
+                    <h3 className="text-base md:text-lg font-semibold" style={{ color: platform.color }}>
                       {platform.name}
                     </h3>
-                    <p className="text-uwinn-purple/60 mt-1 text-sm">
+                    <p className="text-uwinn-purple/60 mt-0.5 md:mt-1 text-xs md:text-sm hidden sm:block">
                       {platform.description}
                     </p>
                     <div className="mt-3">
