@@ -68,25 +68,20 @@ const Index = () => {
         </div>
 
         <div className="w-full max-w-3xl mx-auto text-center space-y-6 relative z-10">
-          <div className="flex flex-col items-center justify-center gap-5 animate-fade-in">
+          <div className="flex flex-col items-center justify-center gap-4 animate-fade-in">
             <div className="relative">
               <div className="absolute inset-0 bg-white/20 rounded-full blur-2xl scale-150" />
               <img 
                 src="/lovable-uploads/instwin-logo.png" 
                 alt="InstWin Logo" 
-                className="h-28 md:h-36 w-auto relative z-10 drop-shadow-2xl hover-scale" 
+                className="h-40 md:h-52 w-auto relative z-10 drop-shadow-2xl hover-scale" 
               />
             </div>
-            <div className="space-y-2">
-              <p className="text-sm md:text-base uppercase tracking-[0.4em] text-white/70 font-light">Welcome To</p>
-              <h1 className="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg" style={{ letterSpacing: '0.05em' }}>
-                INSTWIN
-              </h1>
-              <div className="flex items-center justify-center gap-2 mt-3">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-white/40" />
-                <Sparkles className="h-4 w-4 text-uwinn-accent" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-white/40" />
-              </div>
+            <p className="text-sm md:text-base uppercase tracking-[0.4em] text-white/70 font-light">Welcome</p>
+            <div className="flex items-center justify-center gap-2">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-white/40" />
+              <Sparkles className="h-4 w-4 text-uwinn-accent" />
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-white/40" />
             </div>
           </div>
         </div>
