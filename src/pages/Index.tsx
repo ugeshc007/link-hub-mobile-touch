@@ -2,6 +2,7 @@
 import { Instagram, Facebook, Youtube, MessageCircle, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import StatsSection from "@/components/StatsSection";
+import KenoGame from "@/components/KenoGame";
 
 const platforms = [
   {
