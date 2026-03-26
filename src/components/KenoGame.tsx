@@ -190,7 +190,7 @@ const KenoGame = () => {
                   ? "bg-green-500/10 border border-green-500/20"
                   : "bg-white/5 border border-white/10"
             }`}>
-              <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">
+              <p className="text-xl md:text-3xl font-extrabold text-white mb-1">
                 {hits.length >= 7 ? "🎉 JACKPOT! 🎉" : hits.length >= 5 ? "🔥 BIG WIN!" : hits.length >= 3 ? "✨ Nice Hit!" : hits.length > 0 ? "Keep Trying!" : "No Luck 😅"}
               </p>
               <p className="text-white/60 text-sm">
