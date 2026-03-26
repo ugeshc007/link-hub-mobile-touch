@@ -140,6 +140,9 @@ const Index = () => {
         </div>
       </div>
       
+      {/* Keno Game */}
+      <KenoGame />
+
       {/* Stats Section */}
       <StatsSection />
     </div>
