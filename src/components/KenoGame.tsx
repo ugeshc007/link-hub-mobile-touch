@@ -239,7 +239,7 @@ const KenoGame = () => {
         </div>
 
         {/* Legend */}
-        <div className="px-4 md:px-6 pb-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-white/40">
+        <div className="px-3 md:px-6 pb-3 md:pb-4 flex flex-wrap justify-center gap-x-3 md:gap-x-4 gap-y-1 text-[10px] md:text-xs text-white/40">
           <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-uwinn-purple border border-uwinn-light inline-block" /> Your Pick</span>
           <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-yellow-500 inline-block" /> Drawn</span>
           <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500 inline-block" /> Hit!</span>
