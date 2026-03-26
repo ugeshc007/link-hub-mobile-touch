@@ -131,5 +131,13 @@
 }
 
 .uwinn-gradient {
-  background: linear-gradient(135deg, #91174D 0%, #D62B8C 100%);
+  background: linear-gradient(135deg, #6E0A49 0%, #91174D 30%, #D62B8C 70%, #91174D 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
