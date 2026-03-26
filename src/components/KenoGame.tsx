@@ -200,7 +200,7 @@ const KenoGame = () => {
           )}
 
           {/* Action Buttons */}
-          <div className="flex gap-3">
+          <div className="flex gap-2 md:gap-3">
             {gamePhase === "picking" && (
               <>
                 <Button
