@@ -102,7 +102,7 @@ const KenoGame = () => {
     <div className="w-full max-w-3xl mx-auto px-3 md:px-4 mb-6 md:mb-12">
       <div className="bg-gradient-to-br from-uwinn-dark via-uwinn-purple to-uwinn-light rounded-2xl shadow-2xl overflow-hidden border border-white/10">
         {/* Header */}
-        <div className="p-4 md:p-6 text-center border-b border-white/10 relative overflow-hidden">
+        <div className="p-3 md:p-6 text-center border-b border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.1),transparent_70%)]" />
           <div className="relative z-10">
             <div className="flex items-center justify-center gap-2 mb-1">
