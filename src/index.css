@@ -141,3 +141,30 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+@keyframes lottoBallFloat {
+  0% {
+    transform: translateY(60px) scale(0);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-12px) scale(1.05);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(4px) scale(0.98);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(-4px) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(60px) scale(0.5);
+    opacity: 0;
+  }
+}
