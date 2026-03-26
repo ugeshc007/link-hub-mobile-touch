@@ -57,9 +57,9 @@ const platforms = [
 
 const Index = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-muted/30 to-background">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-muted/30 to-background overflow-x-hidden">
       {/* Hero Section */}
-      <div className="w-full uwinn-gradient py-16 md:py-24 px-4 relative overflow-hidden">
+      <div className="w-full uwinn-gradient py-10 md:py-24 px-3 md:px-4 relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-20 -left-20 w-60 h-60 bg-white/5 rounded-full blur-3xl" />
