@@ -2,7 +2,7 @@
 import { Instagram, Facebook, Youtube, MessageCircle, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import StatsSection from "@/components/StatsSection";
-import KenoGame from "@/components/KenoGame";
+
 import LottoBalls from "@/components/LottoBalls";
 
 const platforms = [
@@ -137,8 +137,6 @@ const Index = () => {
         </div>
       </div>
       
-      {/* Keno Game */}
-      <KenoGame />
 
       {/* Stats Section */}
       <StatsSection />
