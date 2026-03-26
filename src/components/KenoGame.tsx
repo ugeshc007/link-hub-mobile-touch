@@ -125,7 +125,7 @@ const KenoGame = () => {
                   onClick={() => toggleNumber(num)}
                   disabled={gamePhase !== "picking"}
                   className={`
-                    aspect-square rounded-lg md:rounded-xl border-2 font-bold text-sm md:text-base
+                    aspect-square rounded-lg md:rounded-xl border-2 font-bold text-xs sm:text-sm md:text-base
                     flex items-center justify-center
                     transition-all duration-300 cursor-pointer
                     disabled:cursor-default
