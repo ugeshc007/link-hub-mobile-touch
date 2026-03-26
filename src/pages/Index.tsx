@@ -57,9 +57,9 @@ const platforms = [
 
 const Index = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-muted/30 to-background">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-muted/30 to-background overflow-x-hidden">
       {/* Hero Section */}
-      <div className="w-full uwinn-gradient py-16 md:py-24 px-4 relative overflow-hidden">
+      <div className="w-full uwinn-gradient py-10 md:py-24 px-3 md:px-4 relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-20 -left-20 w-60 h-60 bg-white/5 rounded-full blur-3xl" />
@@ -74,7 +74,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/instwin-logo.png" 
                 alt="InstWin Logo" 
-                className="h-40 md:h-52 w-auto relative z-10 drop-shadow-2xl hover-scale" 
+                className="h-32 sm:h-40 md:h-52 w-auto relative z-10 drop-shadow-2xl hover-scale" 
               />
             </div>
             <p className="text-sm md:text-base uppercase tracking-[0.4em] text-white/70 font-light">Welcome</p>
@@ -88,42 +88,42 @@ const Index = () => {
       </div>
 
       {/* Digital Platforms Section */}
-      <div className="w-full max-w-3xl mx-auto -mt-6 mb-8 md:mb-12 px-4">
-        <div className="bg-white rounded-2xl shadow-xl p-5 md:p-8 border border-border/50">
+      <div className="w-full max-w-3xl mx-auto -mt-6 mb-6 md:mb-12 px-3 md:px-4">
+        <div className="bg-white rounded-2xl shadow-xl p-4 md:p-8 border border-border/50">
           <div className="text-center mb-6 md:mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-uwinn-purple">Our Digital Platforms</h2>
+            <h2 className="text-xl md:text-3xl font-bold text-uwinn-purple">Our Digital Platforms</h2>
             <p className="text-uwinn-purple/60 mt-2 max-w-lg mx-auto text-sm md:text-base">
               Stay connected and accessible wherever you are
             </p>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {platforms.map((platform, index) => {
               const Icon = platform.icon;
               return (
                 <div 
                   key={platform.name}
-                  className={`p-4 md:p-5 border ${platform.borderColor} rounded-xl ${platform.gradientBg} flex flex-col md:flex-row items-start transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group`}
+                  className={`p-3 md:p-5 border ${platform.borderColor} rounded-xl ${platform.gradientBg} flex items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className={`${platform.iconBg} p-3.5 rounded-2xl mb-3 md:mb-0 md:mr-4 shadow-lg flex-shrink-0 self-center md:self-start transition-transform duration-300 group-hover:scale-110`}>
-                    <Icon className="h-6 w-6 text-white" />
+                  <div className={`${platform.iconBg} p-2.5 md:p-3.5 rounded-xl md:rounded-2xl mr-3 md:mr-4 shadow-lg flex-shrink-0 transition-transform duration-300 group-hover:scale-110`}>
+                    <Icon className="h-5 w-5 md:h-6 md:w-6 text-white" />
                   </div>
                   <div className="text-left w-full">
-                    <h3 className="text-lg font-semibold" style={{ color: platform.color }}>
+                    <h3 className="text-base md:text-lg font-semibold" style={{ color: platform.color }}>
                       {platform.name}
                     </h3>
-                    <p className="text-uwinn-purple/60 mt-1 text-sm">
+                    <p className="text-uwinn-purple/60 mt-0.5 md:mt-1 text-xs md:text-sm hidden sm:block">
                       {platform.description}
                     </p>
-                    <div className="mt-3">
+                    <div className="mt-2 md:mt-3">
                       <Button 
                         variant="outline" 
                         size="sm" 
-                        className={`w-full font-semibold rounded-lg transition-all duration-300 ${platform.btnClass}`}
+                        className={`w-full font-semibold rounded-lg transition-all duration-300 text-xs md:text-sm ${platform.btnClass}`}
                         onClick={() => window.open(platform.url, "_blank")}
                       >
-                        <Icon className="h-4 w-4 mr-2" />
+                        <Icon className="h-3.5 w-3.5 md:h-4 md:w-4 mr-1.5 md:mr-2" />
                         {platform.label}
                       </Button>
                     </div>

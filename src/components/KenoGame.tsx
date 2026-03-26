@@ -99,24 +99,24 @@ const KenoGame = () => {
   const multiplier = hits.length === 0 ? 0 : hits.length <= 3 ? hits.length : hits.length <= 6 ? hits.length * 2 : hits.length * 5;
 
   return (
-    <div className="w-full max-w-3xl mx-auto px-4 mb-8 md:mb-12">
+    <div className="w-full max-w-3xl mx-auto px-3 md:px-4 mb-6 md:mb-12">
       <div className="bg-gradient-to-br from-uwinn-dark via-uwinn-purple to-uwinn-light rounded-2xl shadow-2xl overflow-hidden border border-white/10">
         {/* Header */}
-        <div className="p-4 md:p-6 text-center border-b border-white/10 relative overflow-hidden">
+        <div className="p-3 md:p-6 text-center border-b border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.1),transparent_70%)]" />
           <div className="relative z-10">
             <div className="flex items-center justify-center gap-2 mb-1">
-              <Zap className="h-5 w-5 text-uwinn-accent" />
-              <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-wide">INSTANT KENO</h2>
-              <Zap className="h-5 w-5 text-uwinn-accent" />
+              <Zap className="h-4 w-4 md:h-5 md:w-5 text-uwinn-accent" />
+              <h2 className="text-xl md:text-3xl font-extrabold text-white tracking-wide">INSTANT KENO</h2>
+              <Zap className="h-4 w-4 md:h-5 md:w-5 text-uwinn-accent" />
             </div>
-            <p className="text-white/60 text-sm">Pick up to {MAX_PICKS} numbers, then draw!</p>
+            <p className="text-white/60 text-xs md:text-sm">Pick up to {MAX_PICKS} numbers, then draw!</p>
           </div>
         </div>
 
         {/* Game Board */}
-        <div className="p-4 md:p-6">
-          <div className="grid grid-cols-8 gap-1.5 md:gap-2 mb-5">
+        <div className="p-3 md:p-6">
+          <div className="grid grid-cols-5 sm:grid-cols-8 gap-1.5 md:gap-2 mb-4 md:mb-5">
             {Array.from({ length: TOTAL_NUMBERS }, (_, i) => i + 1).map((num) => {
               const state = getNumberState(num);
               return (
@@ -125,7 +125,7 @@ const KenoGame = () => {
                   onClick={() => toggleNumber(num)}
                   disabled={gamePhase !== "picking"}
                   className={`
-                    aspect-square rounded-lg md:rounded-xl border-2 font-bold text-sm md:text-base
+                    aspect-square rounded-lg md:rounded-xl border-2 font-bold text-xs sm:text-sm md:text-base
                     flex items-center justify-center
                     transition-all duration-300 cursor-pointer
                     disabled:cursor-default
@@ -140,8 +140,8 @@ const KenoGame = () => {
           </div>
 
           {/* Info Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-3 mb-4 px-1">
-            <div className="flex items-center gap-4 text-white/80 text-sm">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-3 md:mb-4 px-1">
+            <div className="flex items-center gap-3 text-white/80 text-xs md:text-sm">
               <span>Picked: <strong className="text-uwinn-accent">{selectedNumbers.length}/{MAX_PICKS}</strong></span>
               {gamePhase !== "picking" && (
                 <span>Hits: <strong className="text-green-400">{hits.length}</strong></span>
@@ -157,14 +157,14 @@ const KenoGame = () => {
 
           {/* Drawn Numbers Display */}
           {gamePhase !== "picking" && (
-            <div className="mb-5 p-3 bg-black/20 rounded-xl border border-white/10">
-              <p className="text-white/50 text-xs uppercase tracking-wider mb-2 text-center">Drawn Numbers</p>
-              <div className="flex flex-wrap justify-center gap-2">
+            <div className="mb-4 md:mb-5 p-2.5 md:p-3 bg-black/20 rounded-xl border border-white/10">
+              <p className="text-white/50 text-[10px] md:text-xs uppercase tracking-wider mb-2 text-center">Drawn Numbers</p>
+              <div className="flex flex-wrap justify-center gap-1.5 md:gap-2">
                 {drawnNumbers.map((num, i) => (
                   <div
                     key={num}
                     className={`
-                      w-9 h-9 md:w-10 md:h-10 rounded-lg flex items-center justify-center font-bold text-sm
+                      w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center font-bold text-xs md:text-sm
                       border-2 transition-all duration-500
                       ${i < revealedCount
                         ? selectedNumbers.includes(num)
@@ -183,24 +183,24 @@ const KenoGame = () => {
 
           {/* Results Banner */}
           {gamePhase === "results" && (
-            <div className={`text-center p-4 rounded-xl mb-4 animate-scale-in ${
+            <div className={`text-center p-3 md:p-4 rounded-xl mb-3 md:mb-4 animate-scale-in ${
               hits.length >= 5
                 ? "bg-gradient-to-r from-yellow-500/20 via-uwinn-accent/20 to-yellow-500/20 border border-uwinn-accent/30"
                 : hits.length >= 3
                   ? "bg-green-500/10 border border-green-500/20"
                   : "bg-white/5 border border-white/10"
             }`}>
-              <p className="text-2xl md:text-3xl font-extrabold text-white mb-1">
+              <p className="text-xl md:text-3xl font-extrabold text-white mb-1">
                 {hits.length >= 7 ? "🎉 JACKPOT! 🎉" : hits.length >= 5 ? "🔥 BIG WIN!" : hits.length >= 3 ? "✨ Nice Hit!" : hits.length > 0 ? "Keep Trying!" : "No Luck 😅"}
               </p>
-              <p className="text-white/60 text-sm">
+              <p className="text-white/60 text-xs md:text-sm">
                 You matched <strong className="text-green-400">{hits.length}</strong> out of {selectedNumbers.length} picks
               </p>
             </div>
           )}
 
           {/* Action Buttons */}
-          <div className="flex gap-3">
+          <div className="flex gap-2 md:gap-3">
             {gamePhase === "picking" && (
               <>
                 <Button
@@ -239,7 +239,7 @@ const KenoGame = () => {
         </div>
 
         {/* Legend */}
-        <div className="px-4 md:px-6 pb-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-white/40">
+        <div className="px-3 md:px-6 pb-3 md:pb-4 flex flex-wrap justify-center gap-x-3 md:gap-x-4 gap-y-1 text-[10px] md:text-xs text-white/40">
           <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-uwinn-purple border border-uwinn-light inline-block" /> Your Pick</span>
           <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-yellow-500 inline-block" /> Drawn</span>
           <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500 inline-block" /> Hit!</span>
