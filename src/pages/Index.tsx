@@ -116,14 +116,14 @@ const Index = () => {
                     <p className="text-uwinn-purple/60 mt-0.5 md:mt-1 text-xs md:text-sm hidden sm:block">
                       {platform.description}
                     </p>
-                    <div className="mt-3">
+                    <div className="mt-2 md:mt-3">
                       <Button 
                         variant="outline" 
                         size="sm" 
-                        className={`w-full font-semibold rounded-lg transition-all duration-300 ${platform.btnClass}`}
+                        className={`w-full font-semibold rounded-lg transition-all duration-300 text-xs md:text-sm ${platform.btnClass}`}
                         onClick={() => window.open(platform.url, "_blank")}
                       >
-                        <Icon className="h-4 w-4 mr-2" />
+                        <Icon className="h-3.5 w-3.5 md:h-4 md:w-4 mr-1.5 md:mr-2" />
                         {platform.label}
                       </Button>
                     </div>
