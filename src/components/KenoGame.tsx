@@ -99,7 +99,7 @@ const KenoGame = () => {
   const multiplier = hits.length === 0 ? 0 : hits.length <= 3 ? hits.length : hits.length <= 6 ? hits.length * 2 : hits.length * 5;
 
   return (
-    <div className="w-full max-w-3xl mx-auto px-4 mb-8 md:mb-12">
+    <div className="w-full max-w-3xl mx-auto px-3 md:px-4 mb-6 md:mb-12">
       <div className="bg-gradient-to-br from-uwinn-dark via-uwinn-purple to-uwinn-light rounded-2xl shadow-2xl overflow-hidden border border-white/10">
         {/* Header */}
         <div className="p-4 md:p-6 text-center border-b border-white/10 relative overflow-hidden">
