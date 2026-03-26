@@ -13,7 +13,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/instwin-logo.png" 
               alt="InstWin Logo" 
-              className="h-20 md:h-24 w-auto" 
+              className="h-28 md:h-36 w-auto" 
             />
             <div>
               <p className="text-sm md:text-base uppercase tracking-[0.3em] text-gray-200 mb-1">Welcome To</p>
