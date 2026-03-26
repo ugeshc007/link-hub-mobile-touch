@@ -157,9 +157,9 @@ const KenoGame = () => {
 
           {/* Drawn Numbers Display */}
           {gamePhase !== "picking" && (
-            <div className="mb-5 p-3 bg-black/20 rounded-xl border border-white/10">
-              <p className="text-white/50 text-xs uppercase tracking-wider mb-2 text-center">Drawn Numbers</p>
-              <div className="flex flex-wrap justify-center gap-2">
+            <div className="mb-4 md:mb-5 p-2.5 md:p-3 bg-black/20 rounded-xl border border-white/10">
+              <p className="text-white/50 text-[10px] md:text-xs uppercase tracking-wider mb-2 text-center">Drawn Numbers</p>
+              <div className="flex flex-wrap justify-center gap-1.5 md:gap-2">
                 {drawnNumbers.map((num, i) => (
                   <div
                     key={num}
